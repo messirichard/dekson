@@ -66,18 +66,92 @@
               <div class="title">
                 <p>Item Code</p>
               </div>
+              <div class="isi">
+                <p>DSGSC3SB</p>
+              </div>
             </div>
             <div class="col-md-20">
               <div class="title">
                 <p>Category</p>
+              </div>
+              <div class="isi">
+                <p>Glass</p>
               </div>
             </div>
             <div class="col-md-20">
               <div class="title">
                 <p>Material</p>
               </div>
+              <div class="isi">
+                <p>SUS 304 - Deluxe</p>
+              </div>
             </div>
           </div>
+          <div class="row pt-3">
+            <div class="col-md-20">
+              <div class="title">
+                <p>Finishing</p>
+              </div>
+              <div class="isi">
+                <p>SSS</p>
+              </div>
+            </div>
+            <div class="col-md-20">
+              <div class="title">
+                <p>Color</p>
+              </div>
+              <div class="isi">
+                <p>Black</p>
+              </div>
+            </div>
+            <div class="col-md-20">
+              <div class="title">
+                <p>Dimension</p>
+              </div>
+              <div class="isi">
+                <p>450x450x90 mm</p>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-md-60">
+              <div class="title">
+                <p>Descrption</p>
+              </div>
+              <div class="isi">
+                <p>Double Head Aluminium Dent Puller Suction Carrier This dent puller is Perfect for body work on machines and vehicles. The suction on the cups has the ability to carry heavy goods such as windows, doors and mirrors.</p>
+              </div>
+            </div>
+          </div>
+          <div class="garis-proddd"></div>
+          <div class="row">
+            <div class="col-md-60">
+              <div class="titleeee">
+                <p>Interested in this product? Feel free to inquire</p>
+              </div>
+            </div>
+          </div>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-18">
+                <input type="Your Name" class="form-control" id="inputYourName4" placeholder="Your Name">
+              </div>
+              <div class="form-group col-md-18">
+                <input type="Your Mobile Phone" class="form-control" id="inputPassword4" placeholder="Your Mobile Phone">
+              </div>
+              <div class="form-group col-md-18">
+                <input type="Your Email" class="form-control" id="inputPassword4" placeholder="Your Email">
+              </div>
+              <div class="form-group col-md-6">
+                <div class="submit">
+                  <a href="#">
+                  <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
+                  </a>
+                  <!-- <a href="#"><p> Submit</p></a> -->
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
     </div>
     <div class="row"></div>
