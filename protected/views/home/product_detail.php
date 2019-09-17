@@ -1,128 +1,145 @@
-<section class="cover-proddet">
-    <div class="prelative container">
-        <div class="row">
-            <div class="col-md-60">
-                <div class="content">
-                    <div class="title">
-                        <h4>Houseware Collection</h4>
-                        <p>By Lucky Star Plastics</p>
-                    </div>
-                </div>
-            </div>
+<section class="product-det-sec-1">
+  <div class="prelative container">
+    <div class="row">
+      <div class="col-md-60">
+        <div class="box-content">
+          <div class="title">
+            <h3>Products</h3>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
-
-
-
-<?php
-$mod_prodisi = [
-    1 => [
-        'title' => 'ITEM CODE',
-        'isi' => 'HW0021',
-    ],
-    [
-        'title' => 'SIZE',
-        'isi' => '36 x 34.5 x 46 cm',
-    ],
-    [
-        'title' => 'MATERIAL',
-        'isi' => 'Plastic PP',
-    ],
-    [
-        'title' => 'DESCRIPTION',
-        'isi' => 'Keranjang anyam besar plastik Lucky Star diproduksi dengan
-        menggunakan material plastik dan teknologi produksi yang terbaik. Seluruh permukaan produk Lucky Star Plastic akan memiliki fitur plastik yang mulus, bersih, kuat dan nyaman dipegang serta mudah dibersihkan. Dengan desain yang atraktif dan warna yang menarik, produk ini akan cocok dalam segala situasi di rumah anda.',
-    ]
-];
-?>
 
 <section class="breadcrumb-det">
     <div class="prelative container">
-
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Houseware Collection</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Keranjang Anyam Besar</li>
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Products</a></li>
+                <li class="breadcrumb-item"><a href="#">Glass</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Glass Suction GSC 3S</li>
             </ol>
             <div class="back">
-                <a href="#">
-                <p>Kembali</p>
-                </a>
+                <a href="#"><p>Back</p></a>
             </div>
         </nav>
-
-        <div class="row">
-            <div class="col-md-30">
-                <div class="image"><img class="w-100" src="<?php echo $this->assetBaseurl; ?>productdetails.jpg" alt=""></div>
-            </div>
-            <div class="col-md-30">
-                <div class="title">
-                    <p>Reich EZ008 Digital Door Lock & Handle With Keypad</p>
-                </div>
-                <div class="hr-garis"></div>
-                <?php foreach($mod_prodisi as $key => $value): ?>
-                <div class="row no-gutters">
-                    <div class="col-md-17">
-                        <div class="prodtit">
-                            <p><?php echo $value['title'] ?></p>
-                        </div>
-                    </div>
-                    <div class="col-md-43">
-                        <div class="prodisi">
-                            <p><?php echo $value['isi'] ?></p>
-                        </div>
-                    </div>
-                </div>
-                <?php endforeach ?>
-            </div>
-        </div>
     </div>
 </section>
 
+<section class="product-det-sec-2">
+  <div class="prelative container">
+    <div class="row">
+      <div class="col-md-60">
+        <div class="box-content">
+          <div class="title">
+            <h2>Glass Suction GSC 3S</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="product-det-sec-3">
+  <div class="prelative container">
+    <div class="row">
+        <div class="col-md-21">
+          <div class="images"><img src="" alt=""></div>
+        </div>
+        <div class="col-md-39">
+          .row>.col-md-13*3>
+        </div>
+    </div>
+    <div class="row"></div>
+  </div>
+</section>
 
 <?php
-$category = [
+$projects = [
     1 => [
-        'gambar' => 'category1.jpg',
-		'judul' => 'Reich EZ008 Digital Door Lock &
-		Handle With Keypad',
+        'images' => 'category1.jpg',
+        'title' => 'Advertising Screw ADV 19x30MM PSS',
+        'subtitle' => 'SUS 316',
     ],
     [
-        'gambar' => 'details1.jpg',
-		'judul' => 'Handle, Aluminium - RC0254',
+        'images' => 'details1.jpg',
+        'title' => 'Advertising Screw ADV 32x10MM PSS',
+        'subtitle' => 'Brass',        
     ],
     [
-        'gambar' => 'details2.jpg',
-		'judul' => 'Lever Handle, with Half Spindle
-        on the Square',
+        'images' => 'details2.jpg',
+        'title' => 'Clip Seal CS 8907',
+        'subtitle' => 'Brass',        
     ],
     [
-        'gambar' => 'details3.jpg',
-		'judul' => 'Cylindrical Grade 2 Lever',
+        'images' => 'details2.jpg',
+        'title' => 'Clip Seal CS 8908',
+        'subtitle' => 'SUS 304 - Deluxe',        
+    ],
+    [
+        'images' => 'details2.jpg',
+        'title' => 'Glass Clip GC 804140F SSS',
+        'subtitle' => 'SUS 304 - Deluxe',        
+    ],
+    [
+        'images' => 'details2.jpg',
+        'title' => 'Glass Clip GC ART00016 G (GG) CP',
+        'subtitle' => 'SUS 304 - Deluxe',        
     ]
 ];
 ?>
 
+<section class="product-det-sec-4">
+  <div class="prelative container">
+    <div class="row">
+      <div class="col-md-60">
+        <div class="box-content">
+          <div class="title">
+            <h3></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php foreach($products as $key => $value): ?>
+    <div class="row">
+      <div class="col-md-10">
+        <div class="box-content">
+          <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
+          <div class="title">
+            <p><?php echo $value['title']?></p>
+          </div>
+          <div class="subtitle">
+            <p><?php echo $value['subtitle']?></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php endforeach ?>
+  </div>
+</section>
 
-<section class="category-sec-2">
-	<div class="prelative container">
-		<div class="row">
-			<?php foreach($category as $key => $value): ?>
-			<div class="col-md-15">
-				<div class="box-content">
-					<div class="image">
-						<img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?><?php echo $value['gambar'] ?>" alt="">
-					</div>
-					<div class="title">
-						<p><?php echo $value['judul']?></p>
-					</div>
-					<div class="subtitle">
-						<a href="#"><p>View More</p></a>
-					</div>
-				</div>
-			</div>
-			<?php endforeach ?>
-		</div>
-	</div>
+<section class="products-sec-3">
+  <div class="prelative container">
+    <div class="row">
+      <div class="col-md-60">
+        <div class="box-content">
+          <div class="title">
+            <h3>our partner brands</h3>
+          </div>
+        </div>    
+      </div>
+      <div class="col-md-60">
+        <div class="box-content">
+          <div class="image"><a href="#"><img src="" alt=""></a></div>
+          <div class="image"><a href="#"><img src="" alt=""></a></div>
+          <div class="image"><a href="#"><img src="" alt=""></a></div>
+          <div class="image"><a href="#"><img src="" alt=""></a></div>
+          <div class="image"><a href="#"><img src="" alt=""></a></div>
+          <div class="image"><a href="#"><img src="" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

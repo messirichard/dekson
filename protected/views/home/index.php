@@ -1,65 +1,111 @@
 <section class="home-sec-1">
     <div class="prelative container">
         <div class="row">
-            <div class="col-md-60">
-                <div class="box-content top">
-                    <div class="title">
-                        <h4>Reich Architecture & Hardware Accessories Category</h4>
-                    </div>
-                    <div class="subtitle">
-                        <p><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Click here to view all products.</a></p>
+            <div class="col-md-30">
+                <div class="box-content">
+                    <div class="image">
+                        <img class="gambar" src="<?php echo $this->assetBaseurl; ?>Layer-111.png" alt="">
+                        <div class="judul"> <p>BLACK SERIES STYLE <br> COLLECTION</p> </div>
+
+                        <div class="subjudul">
+                            <p> A selection of expertly crafted accessories tinted in charming and solid black color, combining leading-edge matte spotless technology with enduring style. </p>
+                        </div>
+
+                        <div class="click">
+                            <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
+                            <p> view product range </p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="col-md-30">
+                <div class="box-content">
+                    <div class="image">
+                        <img class="gambar" src="<?php echo $this->assetBaseurl; ?>Layer-121.png" alt="">
+                        <div class="judul"> <p>ELECTRONIC LOCK <br> PRODUCTS</p> </div>
+
+                        <div class="subjudul">
+                            <p> Smart and reliable solutions from Dekkson for the practical living and keyless secure solution for your home. </p>
+                        </div>
+
+                        <div class="click">
+                            <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
+                            <p> view product range </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-30">
-                <a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">
-                    <div class="box-content">
-                        <div class="image">
-                            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>home1.jpg" alt="">
-                            <p>Aluminium related solution</p>
+
+            <div class="col-md-60">
+                <div class="box-content banner-full prelative">
+                    <div class="image middle">
+                        <img src="<?php echo $this->assetBaseurl; ?>Layer-192.png" alt="">
+                    </div>
+                    <div class="box-description-mid">
+                        <p>WATCH AND LEARN HOW DEKKSON STANDS FOR IT'S UNCOMPROMISING PRODUCT QUALITY</p>
+                        <div class="click-about-us">
+                            <img src="<?php echo $this->assetBaseurl; ?>click0.png" alt="">
+                            <a href="#">Learn more about us</a>
                         </div>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-30">
-                <a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">
-                    <div class="box-content">
-                        <div class="image">
-                            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>home2.jpg" alt="">
-                            <p>Digital door locks</p>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
             <div class="col-md-20">
-                <a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">
-                    <div class="box-content">
-                        <div class="image bottom">
-                            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>home3.jpg" alt="">
-                            <p>Slim drawer solution</p>
+                <div class="box-content">
+                    <div class="image bottom">
+                        <img class="gambar" src="<?php echo $this->assetBaseurl; ?>box-1.png" alt="">
+                            <div class="judul1">
+                                <p>DOWNLOAD OUR <br/> BROCHURES</p>
+                            </div>
+                            <div class="subjudul1">
+                                <p>Learn more about our product series <br/>
+                                 and see it’s detailed informations in <br/>
+                                  each of our brochures.</p>
+                            </div>
+                            <div class="klik">
+                            <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
+                            <a href=""><p> Click Here</p></a>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-md-20">
-                <a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">
-                    <div class="box-content">
-                        <div class="image bottom">
-                            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>home4.jpg" alt="">
-                            <p>Glass related solution</p>
+                <div class="box-content">
+                    <div class="image bottom">
+                        <img class="gambar" src="<?php echo $this->assetBaseurl; ?>box-2.png" alt="">
+                           <div class="judul1">
+                                <p>PROJECT <br/> REFERENCES</p>
+                           </div>
+                           <div class="subjudul1">
+                                <p>An array of our finished and <br/>
+                                 prestigious projects in Indonesia. </p>
+                           </div>
+                           <div class="klik">
+                            <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
+                            <a href=""><p> Click Here</p></a>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-md-20">
-                <a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">
-                    <div class="box-content">
-                        <div class="image bottom">
-                            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>home5.jpg" alt="">
-                            <p>Wood related solution</p>
+                <div class="box-content">
+                    <div class="image bottom">
+                        <img class="gambar" src="<?php echo $this->assetBaseurl; ?>box-3.png" alt="">
+                           <div class="judul1">
+                                <p>SEND US AN <br/> INQUIRY</p>
+                           </div>
+                           <div class="subjudul1">
+                                <p>For any information needed or if you <br/>
+                                 want to talk about anything, contact us<br/>
+                                  through an online inquiry form or call<br/> us directly.</p>
+                           </div>
+                           <div class="klik">
+                            <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
+                            <a href=""><p> Click Here</p></a>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -68,77 +114,40 @@
 <section class="home-sec-2">
     <div class="prelative container2">
         <div class="row">
-            <div class="col-md-30"></div>
-            <div class="col-md-30">
-                <div class="box-content">
-                    <div class="caption">
-                        <p>Want to become our partner in distributing<br><b>Reich hardware & accessories products?</b></p>
-                    </div>
-                    <div class="subtitle">
-                        <p>Reich Architectural & Interior accessories will bring you an excellent plan to market and distribute smart and technological solution products. Expect a profitable business plan that can help construct and build your relationship with modern customers and furniture makers. Come and join us, our representative will be ready to answer your inquiries.</p>
-                    </div>
-                    <div class="click">
-                        <p><a href="<?php echo CHtml::normalizeUrl(array('/home/partner')); ?>">CLICK HERE</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="home-sec-3">
-    <div class="prelative container">
-        <div class="row">
             <div class="col-md-60">
-                <div class="box-content quality">
-                    <div class="title">
-                        <h4>Reich Standard Quality & Advantage</h4>
-                    </div>
-                    <div class="subtitle">
-                        <p>4 basic concepts that act as a company and product characteristicof Reich.</p>
-                    </div>
+                <div class="our">
+                    <p>OUR PARTNERS BRAND</p>
                 </div>
             </div>
-            <div class="col-md-15">
-                <div class="box-content">
-                    <div class="image">
-                        <img src="<?php echo $this->assetBaseurl; ?>quality1.png" alt="">
-                    </div>
-                    <div class="caption">
-                        <p>Never ending creative Inovation, development and creation.</p>
-                    </div>
+            <div class="col-md-10">
+                <div class="logo">
+                    <img src="<?php echo $this->assetBaseurl; ?>iseo.png" alt="">
                 </div>
             </div>
-            <div class="col-md-15">
-                <div class="box-content">
-                    <div class="image">
-                        <img src="<?php echo $this->assetBaseurl; ?>quality2.png" alt="">
-                    </div>
-                    <div class="caption">
-                        <p>Consistency in quality and international standard checking.</p>
-                    </div>
+            <div class="col-md-10">
+                <div class="logo">
+                    <img src="<?php echo $this->assetBaseurl; ?>tormax.png" alt="">
+                </div> 
+            </div>
+            <div class="col-md-10">
+                <div class="logo">
+                    <img src="<?php echo $this->assetBaseurl; ?>bremen.png" alt="">
                 </div>
             </div>
-            <div class="col-md-15">
-                <div class="box-content">
-                    <div class="image">
-                        <img src="<?php echo $this->assetBaseurl; ?>quality3.png" alt="">
-                    </div>
-                    <div class="caption">
-                        <p>Good business plan for profitable partnership and distribution.</p>
-                    </div>
+            <div class="col-md-10">
+                <div class="logo">
+                    <img src="<?php echo $this->assetBaseurl; ?>vallen.png" alt="">
                 </div>
             </div>
-            <div class="col-md-15">
-                <div class="box-content">
-                    <div class="image">
-                        <img src="<?php echo $this->assetBaseurl; ?>quality4.png" alt="">
-                    </div>
-                    <div class="caption">
-                        <p>Optimum value that exceeds price and expectations.</p>
-                    </div>
+            <div class="col-md-10">
+                <div class="logo">
+                    <img src="<?php echo $this->assetBaseurl; ?>gbd.png" alt="">
                 </div>
             </div>
-        </div>
+            <div class="col-md-10">
+                <div class="logo">
+                    <img src="<?php echo $this->assetBaseurl; ?>frascio.png" alt="">
+                </div>
+            </div>
     </div>
 </section>
