@@ -26,7 +26,7 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-	$('.cart-edit-item').click(function() {
+	$('.cart-edit-item').on('click',function() {
 		var qty = prompt("Edit qty","1");
 		var id = $(this).attr('data-id');
 		if (qty > 0) {
@@ -46,7 +46,7 @@ $(document).ready(function() {
 		};
 		return false;
 	})
-	$('.cart-delete-item').click(function() {
+	$('.cart-delete-item').on('click',function() {
 		var qty = 0;
 		var id = $(this).attr('data-id');
 		$.ajax({
@@ -64,7 +64,7 @@ $(document).ready(function() {
 		});
 		return false;
 	})
-	$('.btn-add-compare').click(function() {
+	$('.btn-add-compare').on('click',function() {
 		$.ajax({
 			url: $(this).attr('href'),
 			dataType: 'html',
@@ -79,7 +79,7 @@ $(document).ready(function() {
 		});
 		return false;
 	})
-    $('.product-label-button a').click(function() {
+    $('.product-label-button a').on('click',function() {
         if ($(this).parent().parent().find('.content-text').is( ":hidden" )) {
             $(this).parent().parent().find('.content-text').slideDown();
             $(this).find('i').attr('class', 'glyphicon glyphicon-minus');
