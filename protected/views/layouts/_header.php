@@ -8,7 +8,7 @@ $login_member = $session['login_member'];
 $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
 ?>
 
-<header class="head headers">
+<header class="head headers <?php if ($active_menu_pg == 'home/index'): ?>homes_head<?php endif ?>">
   <div class="prelatife container">
     <div class="tops_section">
       <div class="row">

@@ -58,6 +58,11 @@
 	max-width: 1345px;
 }
 
+header.head.homes_head{
+	position: absolute;
+	top: 0px; left: 0px;
+	z-index: 250;
+}
 header.head{
 	.tops_section{
 		padding-top: 0.2rem;
@@ -139,5 +144,67 @@ header.head{
 	background: url('../images/new/outers_back_header.jpg') repeat-x;
 	height: 116px;
 	width: 100%;
+	clear: both;
+}
+
+html, body{
+	height: 100%;
+}
+
+.fcs-wrapper.outers_fcs_wrapper{
+	#myCarousel_home.carousel{
+		.carousel-inner{
+			.carousel-item{
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+			}
+		}
+		.carousel-caption{
+			left: inherit; right: inherit;
+			left: 0px;
+			width: 100%;
+			bottom: 25%;
+			.bxsl_tx_fcs{
+				bottom: 0%;
+				max-width: 420px;
+				h5{
+					font-family: @monts;
+					font-size: 34px;
+					font-weight: 700;
+					color: #0a2037;
+					line-height: 1.2;
+					display: block;
+					margin-bottom: 1rem;
+				}
+				p{
+					font-size: 18px;
+					font-weight: 300;
+					color: #000;
+					font-family: @fira;
+					line-height: 1.4;
+					margin-bottom: 0.5rem;
+				}
+				a.profil{
+					font-family: @fira;
+					font-size: 14px; font-weight: 700; color: #49494a;
+				}
+			}
+		}
+
+		ol.carousel-indicators{
+			li{
+				width: 11px; height: 11px;
+				border-radius: 50%;
+				background-color: #ccc;
+			}
+			li.active{
+				width: 11px; height: 11px;
+				border-radius: 50%;
+				background-color: #17487d;
+			}
+		}
+	}
+
 	clear: both;
 }
