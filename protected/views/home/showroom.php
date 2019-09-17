@@ -55,7 +55,7 @@
                         </div>
                         <div class="klik">
                             <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
-                            <a href="#"><p> Click Here</p></a>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/brochures')); ?>"><p> Click Here</p></a>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                            </div>
                            <div class="klik">
                             <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
-                            <a href="#"><p> Click Here</p></a>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>"><p> Click Here</p></a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                            </div>
                            <div class="klik">
                             <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
-                            <a href="#"><p> Click Here</p></a>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>"><p> Click Here</p></a>
                         </div>
                     </div>
                 </div>
