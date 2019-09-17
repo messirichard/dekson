@@ -31,7 +31,7 @@ class Controller extends CController
 	// simpan language ID
 	public $languageID;
 
-	public $assetBaseurl;
+	public $assetBaseurl, $assetBaseurl2;
 
 	public function beforeAction($action)
 	{
@@ -50,6 +50,7 @@ class Controller extends CController
 		}
 
 		$this->assetBaseurl = Yii::app()->baseUrl.'/asset/images/';
+		$this->assetBaseurl2 = Yii::app()->baseUrl.'/asset/images/new/';
 
 		$this->pageTitle = $this->setting['default_meta_title'];
 		$this->metaDesc = $this->setting['default_meta_description'];

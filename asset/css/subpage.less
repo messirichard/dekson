@@ -1,3 +1,6 @@
+@play : 'Play', sans-serif;
+@fira : 'Fira Sans', sans-serif;
+@monts : 'Montserrat', sans-serif;
 
 .outers_blockdetail_inprddetail{
 	
@@ -49,4 +52,92 @@
 		clear: both;
 	}
 
+}
+
+.container{
+	max-width: 1345px;
+}
+
+header.head{
+	.tops_section{
+		padding-top: 0.2rem;
+		height: 37px; overflow: hidden;
+		.rights_txt_info{
+			ul.list-inline{
+				li{
+					font-family: @monts;
+					font-size: 13px;
+					font-weight: 400;
+					color: #fff;
+					text-decoration: none;
+					text-transform: uppercase;
+					i.fa{
+						padding-left: 0.3rem;
+						padding-right: 0.3rem;
+					}
+					a{
+						font-family: @monts;
+						font-size: 13px;
+						font-weight: 400;
+						color: #fff;
+						text-decoration: none;
+						text-transform: uppercase;
+					}
+					a:hover,
+					a:focus{
+						text-decoration: none;
+						color: #f5f5f5;
+					}
+				}
+			}
+		}
+	}
+	.bottom_section{
+		padding-top: 0.7rem;
+		.nbloc_steg{
+			span{
+				font-family: @monts;
+				font-size: 15px;
+				font-weight: 300;
+				color: #fff;
+				display: block;
+				line-height: 1.2;
+			}
+		}
+		.lines_bc_agrt{
+
+		}
+		.menu_rightsl{
+			ul{
+				margin: 0;
+				padding: 0;
+				li{
+					font-family: @monts;
+					font-size: 15px;
+					font-weight: 700;
+					color: #fff;
+					a{
+						font-family: @monts;
+						font-size: 15px;
+						font-weight: 700;
+						color: #fff;
+					}
+					a:hover,
+					a:focus{
+						text-decoration: none;
+						color: #f5f5f5;
+					}
+				}
+				li.list-inline-item:not(:last-child) {
+				    margin-right: 0.97rem;
+				}
+			}
+		}
+		clear: both;
+	}
+
+	background: url('../images/new/outers_back_header.jpg') repeat-x;
+	height: 116px;
+	width: 100%;
+	clear: both;
 }
