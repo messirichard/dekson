@@ -94,16 +94,15 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
   </div>
 </header>
 
-<?php
-/*
-<section id="myAffix" class="header-affixs affix-top">-->
+
+<section id="myAffix" class="header-affixs affix-top">
   <div class="clear height-15"></div>
   <div class="prelatife container">
     <div class="row">
       <div class="col-md-15 col-sm-15">
         <div class="lgo_web_headrs_wb">
           <a href="#">
-            <img src="<?php //echo $this->assetBaseurl; ?>logo-footer.png" alt="" class="img img-fluid">
+            <img src="<?php echo $this->assetBaseurl2; ?>lgo-heads-lic.pn" alt="" class="img img-fluid">
           </a>
         </div>
       </div>
@@ -111,13 +110,12 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
         <div class="text-right"> 
           <div class="menu-taffix">
             <ul class="list-inline d-inline">
-              <li class="list-inline-item"><a href="<?php //echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
-              <li class="list-inline-item"><a href="<?php //echo CHtml::normalizeUrl(array('/product/index')); ?>">Produk Bahan Bangunan</a></li>
-              <li class="list-inline-item"><a href="<?php //echo CHtml::normalizeUrl(array('/home/about')); ?>">Profil</a></li>
-              <li class="list-inline-item"><a href="<?php //echo CHtml::normalizeUrl(array('/home/merk')); ?>">Merk & Keagenan</a></li>
-              <li class="list-inline-item"><a href="<?php //echo CHtml::normalizeUrl(array('/home/jadiagen')); ?>">Jadi Agen</a></li>
-              <li class="list-inline-item"><a href="<?php //echo CHtml::normalizeUrl(array('/home/hubungi')); ?>">Hubungi</a></li>
-              <li class="list-inline-item"><a href="<?php //echo CHtml::normalizeUrl(array('/blog/index')); ?>">Blog</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">HOME</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">PRODUCTS</a></li>
+              <li class="list-inline-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
+              <li class="list-inline-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/brochrues')); ?>">BROCHURE</a></li>
+              <li class="list-inline-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>
+              <li class="list-inline-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</a></li>
             </ul>
           </div>
         </div>
@@ -126,7 +124,6 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
     <div class="clear"></div>
   </div>
 </section>
-*/ ?>
 
 <script type="text/javascript">
   $(document).ready(function(){
@@ -144,49 +141,16 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
 
 <script type="text/javascript">
   $(document).ready(function(){
-      // $('.nl_popup a').live('hover', function(){
-      //     $('.popup_carts_header').fadeIn();
-      // });
-      // $('.popup_carts_header').live('mouseleave', function(){
-      //   setTimeout(function(){ 
-      //       $('.popup_carts_header').fadeOut();
-      //   }, 500);
-      // });
-      $('a.closes_btn').on('click', function(){
-        $('.collapsesn_viewmenu').removeClass('show');
-      });
-      $('.navbar-toggler').on('click', function(){
-        $('.collapsesn_viewmenu').addClass('show');
-      });
-
-      var ns_height = $(window).height();
-      $('.collapsesn_viewmenu').css('height', ns_height+"px");
-  });
-  $(function(){
-
-// show and hide m\enu responsive
-    $('a.showmenu_barresponsive').on('click', function() {
-      $('.outer-blok-black-menuresponss-hides').slideToggle('slow');
-      return false;
-    });
-    $('a.closemrespobtn').on('click', function() {
-      $('.outer-blok-black-menuresponss-hides').slideUp('slow');
-      return false;
-        });
-        
-    });
-</script>
-<script type="text/javascript">
-  $(function(){
 
   var sn_width = $(window).width();
-  if (sn_width > 1150) {
+  var offset = $('body').scrollTop();
 
+  if (sn_width > 1150) {
       $(window).scroll(function(){
         var sntop1 = $(window).scrollTop();
+        console.log(sntop1);
 
         if(sntop1 > 115){
-          // console.log(sntop1);
           $('.header-affixs').removeClass('affix-top').addClass('affix');
           // $('.header-affixs').addClass('affix');
         }else{
