@@ -95,9 +95,9 @@ $brochures = [
         <div class="content-box">
             <div class="row">
                 <?php foreach($brochures as $key => $value): ?>
-                <div class="col-md-15">
+                <div class="col-md-15 col-30">
                     <div class="box-content">
-                        <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
+                        <div class="image"><img class="img img-fluid" src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
                         <div class="contenttt">
                             <div class="title">
                                 <a href="#">
