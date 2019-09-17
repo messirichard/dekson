@@ -13,17 +13,17 @@
     <div class="prelative container">
         <div class="row">
         <ul>
-            <li>BROWSE TYPE OF PROJECT</li>
-            <li>All</li>
-            <li>Apartement</li>
-            <li>Education</li>
-            <li>Hospital</li>
-            <li>Hotel</li>
-            <li>ISEO</li>
-            <li>Mall</li>
-            <li>Office</li>
-            <li>Residence</li>
-            <li>Shopping Centre</li>
+            <li><p>BROWSE TYPE OF PROJECT</p></li>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Apartement</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Hospital</a></li>
+            <li><a href="#">Hotel</a></li>
+            <li><a href="#">ISEO</a></li>
+            <li><a href="#">Mall</a></li>
+            <li><a href="#">Office</a></li>
+            <li><a href="#">Residence</a></li>
+            <li><a href="#">Shopping Centre</a></li>
         </ul>
         </div>
     </div>
@@ -53,7 +53,7 @@ $projects = [
     <div class="prelative container">
         <div class="row">
 			<?php foreach($projects as $key => $value): ?>
-            <div class="col-md-30">
+            <div class="col-md-20">
                 <div class="box-content">
                     <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
                     <div class="title">
