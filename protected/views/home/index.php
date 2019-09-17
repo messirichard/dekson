@@ -13,7 +13,7 @@
 
                         <div class="click">
                             <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
-                            <p> view product range </p>
+                            <p>View product range</p>
                         </div>
                     </div>    
                 </div>
@@ -31,7 +31,7 @@
 
                         <div class="click">
                             <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
-                            <p> view product range </p>
+                            <p>View product range</p>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,9 @@
                     <div class="box-description-mid">
                         <p>WATCH AND LEARN HOW DEKKSON STANDS FOR IT'S UNCOMPROMISING PRODUCT QUALITY</p>
                         <div class="click-about-us">
+                            <a href="#">
                             <img src="<?php echo $this->assetBaseurl; ?>click0.png" alt="">
+                            </a>
                             <a href="#">Learn more about us</a>
                         </div>
                     </div>

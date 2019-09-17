@@ -26,67 +26,45 @@ h3{
 }
 
 section.home-sec-1{
-    .box-content.top{
-        text-align: center;
-        padding-top: 165px;
-        padding-bottom: 80px;
-
-        .title{
-            font-size: 30px;
-            color: #ed1c24;
-            padding-bottom: 25px;
-        }
-        .subtitle{
-            font-size: 15px;
-            color: #606060;
-
-        }
-    }
     .image{
-
         img.gambar{
             width: 100%;
         }
-
         width: 100%;
         position: relative;
-        padding-bottom: 30px;
-        max-width: 1476px;
-
+        padding-bottom: 40px;
+        // max-width: 1476px;
         .judul {
-            padding-top : 33px;
-            padding-left : 33px;
-
+            // padding-top : 33px;
+            // padding-left : 33px;
             p{
                 font-size: 30px;
                 font-weight: 700;
                 color : #0a2037;
                 position: absolute;
-                top: 10px;
-                left: 20px;
-                line-height: 1.2;
+                top: 25px;
+                left: 25px;
+                line-height: 1.3;
             }
         }
         .subjudul {
-
             p{
                 font-size: 15px;
-                font-family: @Fira;
+                font-family: 'Fira Sans',sans-serif;
                 font-weight: 300;
                 color: #7d7c7c;
                 position: absolute;
-                margin-top: 100px;
+                margin-top: 115px;
                 left: 25px;
                 top: 10px;
-                max-width: 348px;
+                max-width: 300px;
             }
         }
 
         .click{
-
-                position: absolute;
-                bottom: 100px;
-                left: 25px;
+            position: absolute;
+            bottom: 60px;
+            left: 25px;
 
            p{
                 font-size: 13pt;
@@ -120,7 +98,7 @@ section.home-sec-1{
             padding-left:33px;
             p{ 
                 font-size: 23px;
-                color: #ffffff;
+                color: #d3d3d3;
                 font-family: @Mont;
                 font-weight: 700;
                 position: absolute;
@@ -181,8 +159,9 @@ section.home-sec-1{
             font-family: @Mont;
             
             display: block;
-            max-width: 695px;
-            margin: 0 auto 20px;
+            max-width: 950px;
+            margin: 0 auto 50px;
+            line-height: 1.2;
         }
         .click-about-us{
             img{
@@ -194,6 +173,7 @@ section.home-sec-1{
                 font-size: 16px;
                 font-weight: 600;
                 color: #fff; 
+                text-decoration: none;
             }
         }
     }
@@ -278,6 +258,32 @@ section.home-sec-3{
         font-weight: 700;
         text-align: center;
         padding-top: 20px;
+    }
+}
+
+
+section.breadcrumb-det{
+    ol.breadcrumb{
+        width: 100%;
+        background: transparent;
+        li.breadcrumb-item,
+        li.breadcrumb-item.active{
+            font-size: 13px;color: #464646;text-transform: uppercase;text-decoration: none;
+            a{
+                font-size: 13px;color: #464646;text-transform: uppercase;text-decoration: none;
+            }
+        }
+    }
+}
+
+section.product-sec-1{
+    .box-content{
+        .title{
+            h3{
+                font-size: 29px;font-weight: 700;color: #0b2e5c;font-family: @Mont;
+                text-align: center;
+            }
+        }
     }
 }
 
