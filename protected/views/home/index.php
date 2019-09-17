@@ -124,32 +124,32 @@
                     <p>OUR PARTNERS BRAND</p>
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>iseo.png" alt="">
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>tormax.png" alt="">
                 </div> 
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>bremen.png" alt="">
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>vallen.png" alt="">
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>gbd.png" alt="">
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>frascio.png" alt="">
                 </div>
