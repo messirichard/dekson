@@ -68,7 +68,22 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">PRODUCTS</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PRODUCTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Door & Window</a>
+              <a class="dropdown-item" href="#">Slide & Fold Door</a>
+              <a class="dropdown-item" href="#">Glass</a>
+              <a class="dropdown-item" href="#">Aluminum</a>
+              <a class="dropdown-item" href="#">Steel Door</a>
+              <a class="dropdown-item" href="#">Furniture</a>
+              <a class="dropdown-item" href="#">Electronic Lock</a>
+              <a class="dropdown-item" href="#">Others</a>
+            </div>
+          </li>
+
           <li class="nav-item"><a class="nav-link" href="#">PROJECT REFERENCES</a></li>
           <li class="nav-item"><a class="nav-link" href="#">BROCHURE</a></li>
           <li class="nav-item"><a class="nav-link" href="#">SHOWROOM</a></li>

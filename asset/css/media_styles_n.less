@@ -1,3 +1,7 @@
+@play : 'Play', sans-serif;
+@fira : 'Fira Sans', sans-serif;
+@monts : 'Montserrat', sans-serif;
+
 /*----------------- Responsive ---------------------*/
 @media (max-width: 1200px){
 	
@@ -83,6 +87,46 @@
 
 	header.head{
 		height: auto;
+		.bg-primary{
+			background-color: #19487e !important;
+		}
+	}
+	nav.navbar{
+		.navbar-toggler{
+			padding: 0px;
+			border: 0;
+		}
+
+		ul.navbar-nav{
+			padding: 0.4rem 0;
+			li{
+				// padding: 0.6rem 0;
+				margin-right: 0;
+				border-bottom: 1px solid #ccc;
+				a.nav-link{
+					font-family: @monts;
+					font-size: 13px;
+					color: #fff !important;
+					// padding: 0px;
+				}
+			}
+			li:last-child{
+				border-bottom: 0;
+			}
+
+			.dropdown-menu{
+				background-color: transparent;
+				box-shadow: none;
+				border: 0px;
+				padding: 0px;
+				.dropdown-item{
+					color: #fff;
+					font-family: @monts;
+					font-size: 12px;
+					padding: 0.25rem 1rem;
+				}
+			}
+		}
 	}
 
 	footer [class*="col-md"]{
@@ -96,14 +140,20 @@
 		background: rgb(209,205,194);
 		background: linear-gradient(90deg, rgba(209,205,194,1) 0%, rgba(178,174,165,1) 100%);
 	}
+	.fcs-wrapper.outers_fcs_wrapper #myCarousel_home.carousel .carousel-caption .bxsl_tx_fcs h5 br{
+		display: none;
+	}
 	.fcs-wrapper.outers_fcs_wrapper #myCarousel_home.carousel .carousel-caption .bxsl_tx_fcs h5{
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 	.fcs-wrapper.outers_fcs_wrapper #myCarousel_home.carousel .carousel-caption .bxsl_tx_fcs p{
-		font-size: 1rem;
+		font-size: 0.9rem;
+	}
+	.fcs-wrapper.outers_fcs_wrapper #myCarousel_home.carousel .carousel-caption{
+		padding-bottom: 3rem;
 	}
 	.fcs-wrapper.outers_fcs_wrapper #myCarousel_home.carousel .carousel-indicators{
-		bottom: -20px;
+		bottom: 0px;
 	}
 
 }
