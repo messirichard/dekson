@@ -1,5 +1,5 @@
-<section class="covertop-products mb-5">
-    <div class="prelatife container">
+<section class="covertop-products mb-3">
+    <div class="prelatife container"> 
         <div class="row inners_section">
             <div class="col-md-20 my-auto align-middle py-5">
                 <div class="description_text py-5">

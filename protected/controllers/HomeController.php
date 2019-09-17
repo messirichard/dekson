@@ -232,7 +232,7 @@ class HomeController extends Controller
 		$this->layout='//layouts/column2';
 		$this->pageTitle = 'Product Detail - '. $this->pageTitle;
 		
-		$this->render('//product/product_detail', array(	
+		$this->render('//home/product_detail', array(	
 		));
 	}
 
@@ -1423,6 +1423,15 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 
 		$this->pageTitle = 'brochures'.$this->pageTitle;
 		$this->render('brochures', array(
+			'model'=>$model,
+		));
+	}
+	public function actionProductlist()
+	{
+		$this->layout='//layouts/column2';
+
+		$this->pageTitle = 'Productlist'.$this->pageTitle;
+		$this->render('product_list', array(
 			'model'=>$model,
 		));
 	}
