@@ -8,7 +8,7 @@
                         <p>Showroom</p>
                     </div>
                     <div class="subtitle">
-                        <p>view on google map</p>
+                        <p><a href="#">view on google map</a></p>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,7 @@
                         <p>Whatsapp</p>
                     </div>
                     <div class="subtitle">
-                        <p>081 2235 57575</p>
+                        <p><a href="https://wa.me/6281223557575">081 2235 57575</a></p>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                         <p>Email</p>
                     </div>
                     <div class="subtitle">
-                        <p>inf@dekkson.com</p>
+                        <p><a href="mailto:info@dekkson.com">info@dekkson.com</a></p>
                     </div>
                 </div>
             </div>

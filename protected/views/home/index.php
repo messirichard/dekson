@@ -15,8 +15,10 @@
                         </div>
 
                         <div class="click">
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">
                             <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
                             <p>View product range</p>
+                            </a>
                         </div>
                     </div>    
                 </div>
@@ -33,8 +35,10 @@
                         </div>
 
                         <div class="click">
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">
                             <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
                             <p>View product range</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -48,10 +52,10 @@
                     <div class="box-description-mid">
                         <p>WATCH AND LEARN HOW DEKKSON STANDS FOR IT'S UNCOMPROMISING PRODUCT QUALITY</p>
                         <div class="click-about-us">
-                            <a href="#">
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">
                             <img src="<?php echo $this->assetBaseurl; ?>click0.png" alt="">
                             </a>
-                            <a href="#">Learn more about us</a>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Learn more about us</a>
                         </div>
                     </div>
                 </div>
@@ -70,7 +74,7 @@
                             </div>
                             <div class="klik">
                             <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
-                            <a href=""><p> Click Here</p></a>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/brochures')); ?>"><p> Click Here</p></a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +92,7 @@
                            </div>
                            <div class="klik">
                             <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
-                            <a href=""><p> Click Here</p></a>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>"><p> Click Here</p></a>
                         </div>
                     </div>
                 </div>
@@ -107,7 +111,7 @@
                            </div>
                            <div class="klik">
                             <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
-                            <a href=""><p> Click Here</p></a>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>"><p> Click Here</p></a>
                         </div>
                     </div>
                 </div>
