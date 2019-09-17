@@ -141,7 +141,7 @@ $products = [
                     </div>
                     <div class="klik">
                         <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
-                        <a href=""><p> View product range</p></a>
+                        <a href="<?php echo CHtml::normalizeUrl(array('/home/productlist')); ?>"><p> View product range</p></a>
                     </div>
                 </div>
             </div>

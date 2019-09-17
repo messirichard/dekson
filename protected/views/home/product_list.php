@@ -237,14 +237,16 @@ $produt_glasss = [
       <?php foreach($produt_glasss as $key => $value): ?>
         <div class="col-md-10 col-30">
           <div class="box-content">
-            <div class="image"><img class="w-100" src="<?php echo $this->assetBaseurl; ?><?php echo $value['gambar'] ?>.png" alt=""></div>
+            <div class="image">
+                <a href="<?php echo CHtml::normalizeUrl(array('/home/productdetail')); ?>"><img class="w-100" src="<?php echo $this->assetBaseurl; ?><?php echo $value['gambar'] ?>.png" alt=""></a>
+            </div>
             <div class="title">
-              <a href="#">
+              <a href="<?php echo CHtml::normalizeUrl(array('/home/productdetail')); ?>">
               <p><?php echo $value['title']?></p>
               </a>
             </div>
             <div class="subtitle">
-              <a href="#">
+              <a href="<?php echo CHtml::normalizeUrl(array('/home/productdetail')); ?>">
               <p><?php echo $value['subtitle']?></p>
               </a>
             </div>

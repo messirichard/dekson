@@ -27,7 +27,7 @@
         </div>
         <div class="col-md-15">
           <div class="block-back-link text-right">
-            <a href="#">Back</a>
+            <a href="#" onclick="window.history.back()">Back</a>
           </div>
           <div class="d-block d-sm-none py-2"></div>
         </div>
