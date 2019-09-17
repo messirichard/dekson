@@ -35,7 +35,7 @@ $brochures = [
     <div class="prelative container">
         <div class="row">
 			<?php foreach($brochures as $key => $value): ?>
-            <div class="col-md-30">
+            <div class="col-md-15">
                 <div class="box-content">
                     <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
                     <div class="title">

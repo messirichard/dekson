@@ -263,14 +263,18 @@ section.home-sec-3{
 
 
 section.breadcrumb-det{
-    ol.breadcrumb{
-        width: 100%;
-        background: transparent;
-        li.breadcrumb-item,
-        li.breadcrumb-item.active{
-            font-size: 13px;color: #464646;text-transform: uppercase;text-decoration: none;
-            a{
+    .prelative.container{
+        padding: 0;
+        ol.breadcrumb{
+            padding-left: 0;
+            width: 100%;
+            background: transparent;
+            li.breadcrumb-item,
+            li.breadcrumb-item.active{
                 font-size: 13px;color: #464646;text-transform: uppercase;text-decoration: none;
+                a{
+                    font-size: 13px;color: #464646;text-transform: uppercase;text-decoration: none;
+                }
             }
         }
     }
@@ -368,6 +372,47 @@ section.project-sec-1{
     }
 }
 
+section.project-sec-2{
+    .prelative.container{
+        background: #e6eaee;
+        .content-box{
+            padding: 35px 45px 55px;
+            .box-content{
+                margin-top: 20px;
+                background: #fff;
+                .image{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .contentttt{
+                    height: 60px;
+                    .title{
+                        a{
+                            font-size: 15px;color: #000000;font-weight: 700;text-decoration: none;font-family: @fira;
+                            p{
+                                margin-left: 20px;
+                                margin-top: 20px;
+                                margin-bottom: 0;
+                                font-size: 15px;color: #000000;font-weight: 700;font-family: @fira;
+                            }
+                        }
+                    }
+                    .subtitle{
+                        a{
+                            font-size: 15px;color: #000000;font-weight: 300;text-decoration: none;font-family: @fira;
+                            p{
+                                margin-left: 20px;
+                                margin-bottom: 20px;
+                                font-size: 15px;color: #000000;font-weight: 300;font-family: @fira;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @import 'subpage.less';
 @import 'pandu.less';
 
