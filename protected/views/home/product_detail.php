@@ -2,7 +2,7 @@
   <div class="prelative container">
     <div class="row">
       <div class="col-md-60">
-        <div class="box-content">
+        <div class="box-content"> 
           <div class="title">
             <h3>Products</h3>
           </div>
@@ -14,17 +14,24 @@
 
 <section class="breadcrumb-det">
     <div class="prelative container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Products</a></li>
-                <li class="breadcrumb-item"><a href="#">Glass</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Glass Suction GSC 3S</li>
-            </ol>
-            <div class="back">
-                <a href="#"><p>Back</p></a>
-            </div>
-        </nav>
+      <div class="row">
+        <div class="col-md-45">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Products</a></li>
+                    <li class="breadcrumb-item"><a href="#">Glass</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Glass Suction GSC 3S</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-md-15">
+          <div class="block-back-link text-right">
+            <a href="#">Back</a>
+          </div>
+        </div>
+      </div>
+      <div class="py-2"></div>
     </div>
 </section>
 
@@ -45,11 +52,32 @@
 <section class="product-det-sec-3">
   <div class="prelative container">
     <div class="row">
-        <div class="col-md-21">
-          <div class="images"><img src="" alt=""></div>
+        <div class="col-md-25">
+          <div class="images"><img class="w-100" src="<?php echo $this->assetBaseurl; ?>utama.png" alt=""></div>
+          <div class="row pt-2">
+            <div class="col-md-20"><img class="w-100" src="<?php echo $this->assetBaseurl; ?>sub1.png" alt=""></div>
+            <div class="col-md-20"><img class="w-100" src="<?php echo $this->assetBaseurl; ?>sub2.png" alt=""></div>
+            <div class="col-md-20"><img class="w-100" src="<?php echo $this->assetBaseurl; ?>sub3.png" alt=""></div>
+          </div>
         </div>
-        <div class="col-md-39">
-          .row>.col-md-13*3>
+        <div class="col-md-35">
+          <div class="row">
+            <div class="col-md-20">
+              <div class="title">
+                <p>Item Code</p>
+              </div>
+            </div>
+            <div class="col-md-20">
+              <div class="title">
+                <p>Category</p>
+              </div>
+            </div>
+            <div class="col-md-20">
+              <div class="title">
+                <p>Material</p>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
     <div class="row"></div>
@@ -57,7 +85,7 @@
 </section>
 
 <?php
-$projects = [
+$products = [
     1 => [
         'images' => 'category1.jpg',
         'title' => 'Advertising Screw ADV 19x30MM PSS',
@@ -102,8 +130,8 @@ $projects = [
         </div>
       </div>
     </div>
-    <?php foreach($products as $key => $value): ?>
     <div class="row">
+      <?php foreach($products as $key => $value): ?>
       <div class="col-md-10">
         <div class="box-content">
           <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
@@ -115,8 +143,8 @@ $projects = [
           </div>
         </div>
       </div>
+      <?php endforeach ?>
     </div>
-    <?php endforeach ?>
   </div>
 </section>
 
