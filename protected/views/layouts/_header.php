@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $e_activemenu = $this->action->id;
 $controllers_ac = $this->id;
 $session=new CHttpSession;
@@ -55,7 +55,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
           </div>
         </div>
     </div>
-</header>
+</header> -->
 
 <?php
 /*

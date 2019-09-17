@@ -1387,7 +1387,15 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 			'model'=>$model,
 		));
 	}
+	public function actionProduct()
+	{
+		$this->layout='//layouts/column2';
 
+		$this->pageTitle = 'product'.$this->pageTitle;
+		$this->render('product', array(
+			'model'=>$model,
+		));
+	}
 }
 
 
