@@ -9,7 +9,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active home-slider-new">
               <img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl2; ?>slide-1.jpg" alt="">
-              <!-- <img class="w-100 d-block d-sm-none" src="" alt=""> -->
+              <img class="w-100 d-block d-sm-none" src="<?php echo $this->assetBaseurl2; ?>slide-1-mob.jpg" alt="">
               <div class="carousel-caption caption-slider-home mx-auto">
                 <div class="prelatife container">
                   <div class="bxsl_tx_fcs">
@@ -28,7 +28,7 @@
          </div>
          <div class="carousel-item home-slider-new">
               <img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl2; ?>slide-1.jpg" alt="">
-              <!-- <img class="w-100 d-block d-sm-none" src="" alt=""> -->
+              <img class="w-100 d-block d-sm-none" src="<?php echo $this->assetBaseurl2; ?>slide-1-mob.jpg" alt="">
               <div class="carousel-caption caption-slider-home mx-auto">
                 <div class="prelatife container">
                   <div class="bxsl_tx_fcs">
