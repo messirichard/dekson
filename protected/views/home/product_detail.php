@@ -29,6 +29,7 @@
           <div class="block-back-link text-right">
             <a href="#">Back</a>
           </div>
+          <div class="d-block d-sm-none py-2"></div>
         </div>
       </div>
       <div class="py-2"></div>
@@ -55,12 +56,13 @@
         <div class="col-md-25">
           <div class="images"><img class="w-100" src="<?php echo $this->assetBaseurl; ?>utama.png" alt=""></div>
           <div class="row pt-2">
-            <div class="col-md-20"><img class="w-100" src="<?php echo $this->assetBaseurl; ?>sub1.png" alt=""></div>
-            <div class="col-md-20"><img class="w-100" src="<?php echo $this->assetBaseurl; ?>sub2.png" alt=""></div>
-            <div class="col-md-20"><img class="w-100" src="<?php echo $this->assetBaseurl; ?>sub3.png" alt=""></div>
+            <div class="col-md-20 col-20"><img class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>sub1.png" alt=""></div>
+            <div class="col-md-20 col-20"><img class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>sub2.png" alt=""></div>
+            <div class="col-md-20 col-20"><img class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>sub3.png" alt=""></div>
           </div>
         </div>
         <div class="col-md-35">
+          <div class="d-block d-sm-none py-3"></div>
           <div class="row">
             <div class="col-md-20">
               <div class="title">

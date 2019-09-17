@@ -30,7 +30,7 @@
 <section class="project-sec-1">
     <div class="prelative container">
         <div class="row">
-        <ul>
+        <ul class="d-none d-sm-block">
             <li><p>BROWSE TYPE OF PROJECT</p></li>
             <li><a href="#">All</a></li>
             <li><a href="#">Apartement</a></li>
@@ -43,9 +43,35 @@
             <li><a href="#">Residence</a></li>
             <li><a href="#">Shopping Centre</a></li>
         </ul>
+        <div class="d-block d-none-block py-3 px-3 w-100">
+            <select name="change_url_prd" id="" class="change_url_prd form-control">
+            <option value="">BROWSE TYPE OF PROJECT</option>
+            <option value="">All</option>
+            <option value="">Apartement</option>
+            <option value="">Education</option>
+            <option value="">Hospital</option>
+            <option value="">Hotel</option>
+            <option value="">ISEO</option>
+            <option value="">Mall</option>
+            <option value="">Office</option>
+            <option value="">Residence</option>
+            <option value="">Shopping Centre</option>
+          </select>
+        </div>
         </div>
     </div>
 </section>
+<script type="text/javascript">
+$(function(){
+  
+  $('.change_url_prd').change(function(){
+    var s_idsL = $(this).val();
+    window.open(s_idsL, '_SELF');
+    return false;
+  });
+
+});
+</script>
 
 <?php
 $projects = [

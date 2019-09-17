@@ -83,10 +83,10 @@
  ?>
     <?php echo $content ?>
     
-    <!-- <div id="back-top" class="t-backtop " style="display:none">
+    <div id="back-top" class="t-backtop " style="display:none">
     <div class="clear height-5"></div>
         <a href="#top"><i class="fa fa-chevron-up"></i></a>
-    </div> -->
+    </div>
     <script type="text/javascript">
         $(window).on('load', function(){
             $('.t-backtop').hide();

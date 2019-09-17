@@ -64,7 +64,7 @@
                         <input type="text" class="form-control">
                       </div>
                 </div>
-                <div class="col col-2">
+                <div class="col col-md-2 col-6">
                     <div class="form-group lasts">
                         <label for="exampleIn1" class="n_hide">&nbsp;</label>
                         <button type="submit" class="btn btn-info d-block"><i class="fa fa-search"></i></button>
