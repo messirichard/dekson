@@ -306,3 +306,31 @@ section.footer-sec-1{
 	}
 	clear: both;
 }
+
+.header-affixs.affix-top{ top: -1000px; position: fixed; visibility: collapse; }
+.header-affixs.affix{ top: 0px; left: 0px; position: fixed; visibility: initial; }
+.header-affixs{
+    // background-color: rgba(0, 146, 223, 0.95); #f37021
+    background-color: #19487e;
+    width: 100%;
+    z-index: 1000;
+    height: 90px;
+    border-bottom: 3px solid #fff;
+    z-index: 100000;
+    .lgo_web_headrs_wb{
+      padding-top: 0.5rem;
+      a{
+        display: block;
+        max-width: 217px;
+      }
+    }
+}
+
+.menu-taffix{
+  padding-top: 1.1rem;
+}
+.menu-taffix ul{ margin: 0; padding: 0px; }
+.menu-taffix ul li{ padding: 0px; padding: 0 5px; }
+.menu-taffix ul li a{ font-size: 14px; font-weight: 700; color: #fff; text-decoration: none; text-transform: uppercase; }
+.menu-taffix ul li.active a,
+.menu-taffix ul li a:hover{ text-decoration: none; color: #f5f5f5; }
