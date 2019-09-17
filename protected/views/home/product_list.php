@@ -235,7 +235,7 @@ $produt_glasss = [
   <div class="prelative container">
     <div class="row no-gutters">
       <?php foreach($produt_glasss as $key => $value): ?>
-        <div class="col-md-10">
+        <div class="col-md-10 col-30">
           <div class="box-content">
             <div class="image"><img class="w-100" src="<?php echo $this->assetBaseurl; ?><?php echo $value['gambar'] ?>.png" alt=""></div>
             <div class="title">
@@ -263,32 +263,32 @@ $produt_glasss = [
                     <p>OUR PARTNERS BRAND</p>
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>iseo.png" alt="">
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>tormax.png" alt="">
                 </div> 
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>bremen.png" alt="">
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>vallen.png" alt="">
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>gbd.png" alt="">
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-30">
                 <div class="logo">
                     <img src="<?php echo $this->assetBaseurl; ?>frascio.png" alt="">
                 </div>
