@@ -1,6 +1,6 @@
 *.zip
 asset/css/styles.css
-/config.
+/config.php
 .idea
 assets
 protected/runtime

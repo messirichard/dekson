@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 $e_activemenu = $this->action->id;
 $controllers_ac = $this->id;
 $session=new CHttpSession;
@@ -8,54 +8,54 @@ $login_member = $session['login_member'];
 $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
 ?>
 
-<header class="header">
-    <div class="row no-gutters all">
-        <div class="col-md-20">
-            <ul class="list-inline text-center">
-                <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Our Product Collections</a></li>
-                <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">About Us</a></li>
-                <li class="list-inline-item"><a href="#">Our Quality</a></li>
+<header class="head headers <?php if ($active_menu_pg == 'home/index'): ?>homes_head<?php endif ?>">
+  <div class="prelatife container">
+    <div class="tops_section">
+      <div class="row">
+        <div class="col-md-20"></div>
+        <div class="col-md-40">
+          <div class="rights_txt_info text-right">
+            <ul class="list-inline">
+              <li class="list-inline-item">WHATSAPP <i class="fa fa-whatsapp"></i> 081 2235 57575</li>
+              <li class="list-inline-item"><a href="#">PROJECT REFERENCES</a></li>
+              <li class="list-inline-item"><a href="#">BROCHURE</a></li>
+              <li class="list-inline-item"><a href="#">SHOWROOM</a></li>
+              <li class="list-inline-item"><a href="#">CONTACT US</a></li>
             </ul>
-        </div>
-        <div class="col-md-5"></div>
-        <div class="col-md-10">
-          <div class="logo">
-            <a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">
-                <img src="<?php echo $this->assetBaseurl; ?>Layer-25.png" alt="">
-            </a>
           </div>
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-13">
-            <ul class="list-inline text-right">
-                <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/howtobuy')); ?>">How To Buy</a></li>
-                <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/store_locator')); ?>">Stores</a></li>
-                <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/partner')); ?>">Partnership</a></li>
-            </ul>
-        </div>
-        <div class="col-md-10">
-          <div class="row">
-            <div class="col-md-25">
-              <div class="image-wa">
-                <a href="#">
-                  <img src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="col-md-10">
-              <div class="garis-head"></div> 
-            </div>
-            <div class="col-md-25">
-              <div class="seacrh">
-                <a href="#">
-                  <img src="<?php echo $this->assetBaseurl; ?>search.png" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
     </div>
-</header> -->
+    <div class="bottom_section">
+      <div class="row">
+        <div class="col-md-14">
+          <div class="logo_head"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>"><img src="<?php echo $this->assetBaseurl2; ?>lgo-heads-lic.png" alt="" class="img img-fluid"></a></div>
+        </div>
+        <div class="col-md-46">
+          <div class="d-inline-block align-middle nbloc_steg">
+            <span>PRODUCT<br>CATEGORY</span>
+          </div>
+          <div class="d-inline-block align-middle lines_bc_agrt">
+            <img src="<?php echo $this->assetBaseurl2; ?>backs_lin_separators.jpg" alt="" class="img img-fluid">
+          </div>
+          <div class="menu_rightsl d-inline-block align-middle">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Door & Window</a></li>
+              <li class="list-inline-item"><a href="#">Slide & Fold Door</a></li>
+              <li class="list-inline-item"><a href="#">Glass</a></li>
+              <li class="list-inline-item"><a href="#">Aluminum</a></li>
+              <li class="list-inline-item"><a href="#">Steel Door</a></li>
+              <li class="list-inline-item"><a href="#">Furniture</a></li>
+              <li class="list-inline-item"><a href="#">Electronic Lock</a></li>
+              <li class="list-inline-item"><a href="#">Others</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</header>
 
 <?php
 /*
