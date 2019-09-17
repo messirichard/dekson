@@ -28,6 +28,54 @@
 </section>
 
 <!-- KURANG FORM -->
+<div class="prelatife container">
+    <section class="block-top-filterblue p-5">
+        <h3 class="text-center">Find Dekkson Products</h3>
+        <div class="py-1"></div>
+        <form method="post" action="#">
+            <div class="row no-gutters justify-content-center">
+                <div class="col">
+                      <div class="form-group">
+                        <label for="exampleIn1">Accessories type</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">All</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="col">
+                      <div class="form-group">
+                        <label for="exampleIn1">Material</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">All</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="col">
+                      <div class="form-group">
+                        <label for="exampleIn1">Finishing</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">All</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="col">
+                      <div class="form-group">
+                        <label for="exampleIn1">Keyword / Item Code</label>
+                        <input type="text" class="form-control">
+                      </div>
+                </div>
+                <div class="col col-2">
+                    <div class="form-group lasts">
+                        <label for="exampleIn1" class="n_hide">&nbsp;</label>
+                        <button type="submit" class="btn btn-info d-block"><i class="fa fa-search"></i></button>
+                      </div>
+                </div>
+            </div>
+          </form>
+        <div class="clear"></div>
+    </section>
+    <div class="py-3 my-2"></div>
+</div>
 
 <section class="product-sec-1">
   <div class="prelative container">
