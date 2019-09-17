@@ -50,14 +50,15 @@
                         <p>Dekkson presents the high quality product range of architectural accessories - mechanism - electronics - and many more.</p>
                     </div> 
                     <div class="copyright">
-                        <p>© COPYRIGHT 2019 - DEKKSON ARCHITECTURE ACCESSORIES. ALL RIGHTS RESERVED. WEBSITE DESIGN BY MARKDESIGN.</p>
+                        <p>&copy; COPYRIGHT 2019 - DEKKSON ARCHITECTURE ACCESSORIES. ALL RIGHTS RESERVED. WEBSITE DESIGN BY <a target="_blank" title="Website Design Surabaya" href="http://markdesign.net/">MARKDESIGN</a>.</p>
                     </div>   
                 </div>
             </div>
             <div class="col-md-10">
                 <div class="social-footer">
-                    <a href=""><i class="fa fa-instagram"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    &nbsp;
+                    <a href="#"><i class="fa fa-facebook"></i></a>
                 </div>
             </div>
         </div>

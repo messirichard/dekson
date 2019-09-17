@@ -9,7 +9,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
 ?>
 
 <header class="head headers <?php if ($active_menu_pg == 'home/index'): ?>homes_head<?php endif ?>">
-  <div class="prelatife container">
+  <div class="prelatife container d-none d-sm-block">
     <div class="tops_section">
       <div class="row">
         <div class="col-md-20"></div>
@@ -54,6 +54,43 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
       </div>
     </div>
     <div class="clear"></div>
+  </div>
+  
+  <div class="d-block d-sm-none">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">
+        <img src="<?php echo $this->assetBaseurl2 ?>lgo-heads-lic.png" alt="" class="img img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PRODUCTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Door & Window</a>
+              <a class="dropdown-item" href="#">Slide & Fold Door</a>
+              <a class="dropdown-item" href="#">Glass</a>
+              <a class="dropdown-item" href="#">Aluminum</a>
+              <a class="dropdown-item" href="#">Steel Door</a>
+              <a class="dropdown-item" href="#">Furniture</a>
+              <a class="dropdown-item" href="#">Electronic Lock</a>
+              <a class="dropdown-item" href="#">Others</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#">PROJECT REFERENCES</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">BROCHURE</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">SHOWROOM</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
 </header>
 

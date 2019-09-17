@@ -9,7 +9,26 @@
         <div class="carousel-inner">
           <div class="carousel-item active home-slider-new">
               <img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl2; ?>slide-1.jpg" alt="">
-              <!-- <img class="w-100 d-block d-sm-none" src="" alt=""> -->
+              <img class="w-100 d-block d-sm-none" src="<?php echo $this->assetBaseurl2; ?>slide-1-mob.jpg" alt="">
+              <div class="carousel-caption caption-slider-home mx-auto">
+                <div class="prelatife container">
+                  <div class="bxsl_tx_fcs">
+                    <div class="row no-gutters">
+                      <div class="col-md-60 mx-auto pt-3 text-left">
+                        <h5>Bringing Back The<br>Vintage Beauty To You</h5>
+                        <p>Made with solid alloy steel and finished with elegant matte coating in silver, black and gold color options to match your door.</p>
+                      </div>
+                      <div class="col-md-60 mx-auto pt-3">
+                        <a href="#" class="profil mx-auto text-left d-block"><img src="<?php echo $this->assetBaseurl2; ?>ln_icon-chevron.png" alt="" class="img img-fluid d-inline-block pr-1"> View product range</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         </div>
+         <div class="carousel-item home-slider-new">
+              <img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl2; ?>slide-1.jpg" alt="">
+              <img class="w-100 d-block d-sm-none" src="<?php echo $this->assetBaseurl2; ?>slide-1-mob.jpg" alt="">
               <div class="carousel-caption caption-slider-home mx-auto">
                 <div class="prelatife container">
                   <div class="bxsl_tx_fcs">
@@ -29,6 +48,7 @@
 	     </div>
         <ol class="carousel-indicators">
             <li data-target="#myCarousel_home" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel_home" data-slide-to="1"></li>
         </ol>
     </div>
 
