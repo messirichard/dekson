@@ -37,9 +37,9 @@
 
 <section class="product-det-sec-2">
   <div class="prelative container">
-    <div class="row">
+    <div class="row box-content no-gutters">
       <div class="col-md-60">
-        <div class="box-content">
+        <div class="box-conten">
           <div class="title">
             <h2>Glass Suction GSC 3S</h2>
           </div>
@@ -142,16 +142,20 @@
               <div class="form-group col-md-18">
                 <input type="Your Email" class="form-control" id="inputPassword4" placeholder="Your Email">
               </div>
-              <div class="form-group col-md-6">
-                <div class="submit">
-                  <a href="#">
+              <div class="form-group col-md-5">
                   <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
-                  </a>
                   <!-- <a href="#"><p> Submit</p></a> -->
-                </div>
               </div>
             </div>
           </form>
+          <div class="garis-proddd"></div>
+          <div class="row">
+            <div class="col-md-60">
+              <div class="dekssss">
+                <p>Dekkson offer special quality architectural hardware and interior furnishing accessories with high quality and high grade materials - providing sustainability and durability. Dekkson’s expertise is has proven in all fields and sectors of infrastructure building / developments. Please consult to our specialist to find the right products for your project.</p>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
     <div class="row"></div>
@@ -161,87 +165,74 @@
 <?php
 $products = [
     1 => [
-        'images' => 'category1.jpg',
+        'images' => 'Advertising Screw 1.png',
         'title' => 'Advertising Screw ADV 19x30MM PSS',
         'subtitle' => 'SUS 316',
     ],
     [
-        'images' => 'details1.jpg',
+        'images' => 'Advertising Screw 2.png',
         'title' => 'Advertising Screw ADV 32x10MM PSS',
         'subtitle' => 'Brass',        
     ],
     [
-        'images' => 'details2.jpg',
+        'images' => 'Clip Seal 4.png',
         'title' => 'Clip Seal CS 8907',
         'subtitle' => 'Brass',        
     ],
     [
-        'images' => 'details2.jpg',
+        'images' => 'Clip Seal 4.png',
         'title' => 'Clip Seal CS 8908',
         'subtitle' => 'SUS 304 - Deluxe',        
     ],
     [
-        'images' => 'details2.jpg',
+        'images' => 'Glass Clip.png',
         'title' => 'Glass Clip GC 804140F SSS',
         'subtitle' => 'SUS 304 - Deluxe',        
     ],
     [
-        'images' => 'details2.jpg',
+        'images' => 'GlassClip 3.png',
         'title' => 'Glass Clip GC ART00016 G (GG) CP',
         'subtitle' => 'SUS 304 - Deluxe',        
     ]
 ];
 ?>
 
+<div class="yaya">
+  <div class="prelative container">
+    <div class="garis-prodddsssss"></div>
+  </div>
+</div>
+
+
 <section class="product-det-sec-4">
   <div class="prelative container">
     <div class="row">
       <div class="col-md-60">
-        <div class="box-content">
+        <div class="box-contentsss">
           <div class="title">
-            <h3></h3>
+            <h3>OUR DEKKSON PRODUCTS YOU MIGHT WANT TO LOOK</h3>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row pt-4 mt-2">
       <?php foreach($products as $key => $value): ?>
       <div class="col-md-10">
         <div class="box-content">
-          <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
+          <div class="image"><img class="w-100" src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
           <div class="title">
+            <a href="#">
             <p><?php echo $value['title']?></p>
+            </a>
           </div>
           <div class="subtitle">
+            <a href="#">
             <p><?php echo $value['subtitle']?></p>
+            </a>
           </div>
         </div>
       </div>
       <?php endforeach ?>
-    </div>
-  </div>
-</section>
-
-<section class="products-sec-3">
-  <div class="prelative container">
-    <div class="row">
-      <div class="col-md-60">
-        <div class="box-content">
-          <div class="title">
-            <h3>our partner brands</h3>
-          </div>
-        </div>    
-      </div>
-      <div class="col-md-60">
-        <div class="box-content">
-          <div class="image"><a href="#"><img src="" alt=""></a></div>
-          <div class="image"><a href="#"><img src="" alt=""></a></div>
-          <div class="image"><a href="#"><img src="" alt=""></a></div>
-          <div class="image"><a href="#"><img src="" alt=""></a></div>
-          <div class="image"><a href="#"><img src="" alt=""></a></div>
-          <div class="image"><a href="#"><img src="" alt=""></a></div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
