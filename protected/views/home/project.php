@@ -1,3 +1,21 @@
+<section class="covertop-products mb-5">
+    <div class="prelatife container">
+        <div class="row inners_section">
+            <div class="col-md-20 my-auto align-middle py-5">
+                <div class="description_text py-5">
+                    <h3>Project References</h3>
+                    <p>Dekkson is the best partner you’ll ever need for any projects that needs specific architectural hardware and accesories in various type of infrastructure.</p>
+                </div>
+            </div>
+            <div class="col-md-40">
+                <div class="banner_picture">
+                    <img src="<?php echo $this->assetBaseurl2 ?>ill-pict-products.jpg" alt="" class="img img-fluid"></div>
+            </div>
+        </div>
+        <div class="clear clearfix"></div>
+    </div>    
+</section>
+
 <section class="breadcrumb-det">
     <div class="prelative container">
         <nav aria-label="breadcrumb">

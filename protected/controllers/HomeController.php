@@ -1405,6 +1405,15 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 			'model'=>$model,
 		));
 	}
+	public function actionBrochures()
+	{
+		$this->layout='//layouts/column2';
+
+		$this->pageTitle = 'brochures'.$this->pageTitle;
+		$this->render('brochures', array(
+			'model'=>$model,
+		));
+	}
 }
 
 
