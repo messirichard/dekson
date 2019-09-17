@@ -17,10 +17,10 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
           <div class="rights_txt_info text-right">
             <ul class="list-inline">
               <li class="list-inline-item">WHATSAPP <i class="fa fa-whatsapp"></i> 081 2235 57575</li>
-              <li class="list-inline-item"><a href="#">PROJECT REFERENCES</a></li>
-              <li class="list-inline-item"><a href="#">BROCHURE</a></li>
-              <li class="list-inline-item"><a href="#">SHOWROOM</a></li>
-              <li class="list-inline-item"><a href="#">CONTACT US</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/brochures')); ?>">BROCHURE</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</a></li>
             </ul>
           </div>
         </div>
@@ -40,14 +40,14 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
           </div>
           <div class="menu_rightsl d-inline-block align-middle">
             <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Door & Window</a></li>
-              <li class="list-inline-item"><a href="#">Slide & Fold Door</a></li>
-              <li class="list-inline-item"><a href="#">Glass</a></li>
-              <li class="list-inline-item"><a href="#">Aluminum</a></li>
-              <li class="list-inline-item"><a href="#">Steel Door</a></li>
-              <li class="list-inline-item"><a href="#">Furniture</a></li>
-              <li class="list-inline-item"><a href="#">Electronic Lock</a></li>
-              <li class="list-inline-item"><a href="#">Others</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Door & Window</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Slide & Fold Door</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Glass</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Aluminum</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Steel Door</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Furniture</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Electronic Lock</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Others</a></li>
             </ul>
           </div>
         </div>
@@ -67,27 +67,27 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">HOME</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               PRODUCTS
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Door & Window</a>
-              <a class="dropdown-item" href="#">Slide & Fold Door</a>
-              <a class="dropdown-item" href="#">Glass</a>
-              <a class="dropdown-item" href="#">Aluminum</a>
-              <a class="dropdown-item" href="#">Steel Door</a>
-              <a class="dropdown-item" href="#">Furniture</a>
-              <a class="dropdown-item" href="#">Electronic Lock</a>
-              <a class="dropdown-item" href="#">Others</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Door & Window</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Slide & Fold Door</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Glass</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Aluminum</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Steel Door</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Furniture</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Electronic Lock</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Others</a>
             </div>
           </li>
 
-          <li class="nav-item"><a class="nav-link" href="#">PROJECT REFERENCES</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">BROCHURE</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">SHOWROOM</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/brochrues')); ?>">BROCHURE</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</a></li>
         </ul>
       </div>
     </nav>
