@@ -32,39 +32,77 @@
 <?php
 $projects = [
     1 => [
-        'images' => 'category1.jpg',
+        'images' => 'p1.png',
         'title' => 'Green Lake City',
         'subtitle' => 'Residence',
     ],
     [
-        'images' => 'details1.jpg',
+        'images' => 'p2.png',
         'title' => 'PIK Fish Market',
         'subtitle' => 'Shopping Centre',        
     ],
     [
-        'images' => 'details2.jpg',
+        'images' => 'p3.png',
         'title' => 'Wooland Park Residence',
         'subtitle' => 'Residence',        
-    ]
+    ],
+    [
+        'images' => 'p4.png',
+        'title' => 'Green Lake City',
+        'subtitle' => 'Residence',
+    ],
+    [
+        'images' => 'p5.png',
+        'title' => 'PIK Fish Market',
+        'subtitle' => 'Shopping Centre',        
+    ],
+    [
+        'images' => 'p6.png',
+        'title' => 'Wooland Park Residence',
+        'subtitle' => 'Residence',        
+    ],
+    [
+        'images' => 'p7.png',
+        'title' => 'Green Lake City',
+        'subtitle' => 'Residence',
+    ],
+    [
+        'images' => 'p8.png',
+        'title' => 'PIK Fish Market',
+        'subtitle' => 'Shopping Centre',        
+    ],
+    [
+        'images' => 'p9.png',
+        'title' => 'Wooland Park Residence',
+        'subtitle' => 'Residence',        
+    ],
 ];
 ?>
 
 <section class="project-sec-2">
     <div class="prelative container">
-        <div class="row">
-			<?php foreach($projects as $key => $value): ?>
-            <div class="col-md-20">
-                <div class="box-content">
-                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
-                    <div class="title">
-                        <p><?php echo $value['title']?></p>
-                    </div>
-                    <div class="subtitle">
-                        <p><?php echo $value['subtitle']?></p>
+        <div class="content-box">
+            <div class="row">
+                <?php foreach($projects as $key => $value): ?>
+                <div class="col-md-20">
+                    <div class="box-content">
+                        <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
+                        <div class="contentttt">
+                            <div class="title">
+                                <a href="#">
+                                <p><?php echo $value['title']?></p>
+                                </a>
+                            </div>
+                            <div class="subtitle">
+                                <a href="#">
+                                <p><?php echo $value['subtitle']?></p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <?php endforeach ?>
             </div>
-            <?php endforeach ?>
         </div>
     </div>
 </section>
