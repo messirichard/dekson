@@ -85,7 +85,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
           </li>
 
           <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
-          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/brochrues')); ?>">BROCHURE</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/brochures')); ?>">BROCHURE</a></li>
           <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>
           <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</a></li>
         </ul>
@@ -101,8 +101,8 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
     <div class="row">
       <div class="col-md-15 col-sm-15">
         <div class="lgo_web_headrs_wb">
-          <a href="#">
-            <img src="<?php echo $this->assetBaseurl2; ?>lgo-heads-lic.pn" alt="" class="img img-fluid">
+          <a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">
+            <img src="<?php echo $this->assetBaseurl2; ?>lgo-heads-lic.png" alt="" class="img img-fluid">
           </a>
         </div>
       </div>
@@ -112,10 +112,10 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
             <ul class="list-inline d-inline">
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">HOME</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">PRODUCTS</a></li>
-              <li class="list-inline-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
-              <li class="list-inline-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/brochrues')); ?>">BROCHURE</a></li>
-              <li class="list-inline-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>
-              <li class="list-inline-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/brochures')); ?>">BROCHURE</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</a></li>
             </ul>
           </div>
         </div>
@@ -125,30 +125,18 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
   </div>
 </section>
 
-<script type="text/javascript">
-  $(document).ready(function(){
-      // $('.nl_popup a').live('hover', function(){
-      //     $('.popup_carts_header').fadeIn();
-      // });
-      // $('.popup_carts_header').live('mouseleave', function(){
-      //   setTimeout(function(){ 
-      //       $('.popup_carts_header').fadeOut();
-      //   }, 500);
-      // });
-  });
-</script>
-
 
 <script type="text/javascript">
-  $(document).ready(function(){
+  $(document).ready(function() {
 
   var sn_width = $(window).width();
-  var offset = $('body').scrollTop();
 
+  // console.log($(document).scrollTop());
   if (sn_width > 1150) {
-      $(window).scroll(function(){
-        var sntop1 = $(window).scrollTop();
-        console.log(sntop1);
+      $('body').scroll(function(){
+
+        var sntop1 = $(this).scrollTop();
+        // console.log(sntop1);
 
         if(sntop1 > 115){
           $('.header-affixs').removeClass('affix-top').addClass('affix');

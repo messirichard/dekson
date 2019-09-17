@@ -102,7 +102,7 @@ $projects = [
         <div class="content-box">
             <div class="row">
                 <?php foreach($projects as $key => $value): ?>
-                <div class="col-md-20">
+                <div class="col-md-20 col-30">
                     <div class="box-content">
                         <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
                         <div class="contentttt">

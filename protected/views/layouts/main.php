@@ -17,7 +17,6 @@
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/css/comon.css" />
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
-    
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/js/bootstrap-4.0.0/bootstrap.min.css">
@@ -31,15 +30,11 @@
     <![endif]-->
 
     <?php // Yii::app()->clientScript->registerCoreScript('jquery'); ?>
-    <script type="text/javascript" src="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/js/jquery.min.js"></script>
-    <?php Yii::app()->clientScript->registerCoreScript('jquery.ui'); ?>
-    <?php /*$this->widget('application.extensions.fancyapps.EFancyApps', array(
-            'target'=>'',
-            'config'=>array(),
-            )
-        );*/ ?>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script> -->
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
    
     <!-- All JS -->
     <script type="text/javascript">
@@ -48,7 +43,6 @@
         var url_edit_cart_action = "<?php echo CHtml::normalizeUrl(array('/product/edit')); ?>";
     </script>
     <script src="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/js/all.js"></script>
-    <!-- <script src="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/js/jquery.min3.3.1.js"></script> -->
 
     <?php echo $this->setting['google_tools_webmaster']; ?>
     <?php echo $this->setting['google_tools_analytic']; ?>
@@ -58,9 +52,8 @@
 
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/css/style.deory.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/css/pager.css" />
-    <!-- Css Responsive -->
+    <!-- <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/css/style.deory.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/css/pager.css" /> -->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/css/media.style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/css/animate.css">
     
@@ -95,11 +88,12 @@
         <a href="#top"><i class="fa fa-chevron-up"></i></a>
     </div> -->
     <script type="text/javascript">
-        $(window).load(function(){
-        $('.t-backtop').hide();
+        $(window).on('load', function(){
+            $('.t-backtop').hide();
         });
+
         $(function(){
-            $('.t-backtop').click(function () {
+            $('.t-backtop').on('click', function () {
                     $('body,html').animate({
                         scrollTop: 0
                     }, 800);
@@ -115,7 +109,7 @@
                          }
                      });
 
-            $('.toscroll').click(function() {
+            $('.toscroll').on('click', function() {
                 var sn_id = $(this).attr('data-id');
                 $('html, body').animate({
                     scrollTop: $("#"+ sn_id).offset().top
