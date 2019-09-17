@@ -37,3 +37,66 @@
         </div>
     </div>
 </section>
+
+<section class="showroom-sec-2">
+    <div class="prelative container">
+        <div class="row no-gutters">
+            <div class="col-md-20">
+                <div class="box-content-kiri">
+                    <div class="image bottom">
+                        <img class="gambar" src="<?php echo $this->assetBaseurl; ?>box-1.png" alt="">
+                        <div class="judul1">
+                            <p>DOWNLOAD OUR <br/> BROCHURES</p>
+                        </div>
+                        <div class="subjudul1">
+                            <p>Learn more about our product series <br/>
+                                and see it’s detailed informations in <br/>
+                                each of our brochures.</p>
+                        </div>
+                        <div class="klik">
+                            <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
+                            <a href="#"><p> Click Here</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-20">
+                <div class="box-content">
+                    <div class="image bottom">
+                        <img class="gambar" src="<?php echo $this->assetBaseurl; ?>box-2.png" alt="">
+                           <div class="judul1">
+                                <p>PROJECT <br/> REFERENCES</p>
+                           </div>
+                           <div class="subjudul1">
+                                <p>An array of our finished and <br/>
+                                 prestigious projects in Indonesia. </p>
+                           </div>
+                           <div class="klik">
+                            <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
+                            <a href="#"><p> Click Here</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-20">
+                <div class="box-content">
+                    <div class="image bottom">
+                        <img class="gambar" src="<?php echo $this->assetBaseurl; ?>box-3.png" alt="">
+                           <div class="judul1">
+                                <p>SEND US AN <br/> INQUIRY</p>
+                           </div>
+                           <div class="subjudul1">
+                                <p>For any information needed or if you <br/>
+                                 want to talk about anything, contact us<br/>
+                                  through an online inquiry form or call<br/> us directly.</p>
+                           </div>
+                           <div class="klik">
+                            <img src="<?php echo $this->assetBaseurl; ?>click.png" alt="">
+                            <a href="#"><p> Click Here</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
