@@ -1,3 +1,21 @@
+<section class="covertop-products mb-5">
+    <div class="prelatife container">
+        <div class="row inners_section">
+            <div class="col-md-20 my-auto align-middle py-5">
+                <div class="description_text py-5">
+                    <h3>Project References</h3>
+                    <p>Dekkson is the best partner you’ll ever need for any projects that needs specific architectural hardware and accesories in various type of infrastructure.</p>
+                </div>
+            </div>
+            <div class="col-md-40">
+                <div class="banner_picture">
+                    <img src="<?php echo $this->assetBaseurl2 ?>ill-pict-products.jpg" alt="" class="img img-fluid"></div>
+            </div>
+        </div>
+        <div class="clear clearfix"></div>
+    </div>    
+</section>
+
 <section class="breadcrumb-det">
     <div class="prelative container">
         <nav aria-label="breadcrumb">
@@ -32,39 +50,77 @@
 <?php
 $projects = [
     1 => [
-        'images' => 'category1.jpg',
+        'images' => 'p1.png',
         'title' => 'Green Lake City',
         'subtitle' => 'Residence',
     ],
     [
-        'images' => 'details1.jpg',
+        'images' => 'p2.png',
         'title' => 'PIK Fish Market',
         'subtitle' => 'Shopping Centre',        
     ],
     [
-        'images' => 'details2.jpg',
+        'images' => 'p3.png',
         'title' => 'Wooland Park Residence',
         'subtitle' => 'Residence',        
-    ]
+    ],
+    [
+        'images' => 'p4.png',
+        'title' => 'Green Lake City',
+        'subtitle' => 'Residence',
+    ],
+    [
+        'images' => 'p5.png',
+        'title' => 'PIK Fish Market',
+        'subtitle' => 'Shopping Centre',        
+    ],
+    [
+        'images' => 'p6.png',
+        'title' => 'Wooland Park Residence',
+        'subtitle' => 'Residence',        
+    ],
+    [
+        'images' => 'p7.png',
+        'title' => 'Green Lake City',
+        'subtitle' => 'Residence',
+    ],
+    [
+        'images' => 'p8.png',
+        'title' => 'PIK Fish Market',
+        'subtitle' => 'Shopping Centre',        
+    ],
+    [
+        'images' => 'p9.png',
+        'title' => 'Wooland Park Residence',
+        'subtitle' => 'Residence',        
+    ],
 ];
 ?>
 
 <section class="project-sec-2">
     <div class="prelative container">
-        <div class="row">
-			<?php foreach($projects as $key => $value): ?>
-            <div class="col-md-20">
-                <div class="box-content">
-                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
-                    <div class="title">
-                        <p><?php echo $value['title']?></p>
-                    </div>
-                    <div class="subtitle">
-                        <p><?php echo $value['subtitle']?></p>
+        <div class="content-box">
+            <div class="row">
+                <?php foreach($projects as $key => $value): ?>
+                <div class="col-md-20">
+                    <div class="box-content">
+                        <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
+                        <div class="contentttt">
+                            <div class="title">
+                                <a href="#">
+                                <p><?php echo $value['title']?></p>
+                                </a>
+                            </div>
+                            <div class="subtitle">
+                                <a href="#">
+                                <p><?php echo $value['subtitle']?></p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <?php endforeach ?>
             </div>
-            <?php endforeach ?>
         </div>
     </div>
 </section>
