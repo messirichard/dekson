@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Sep 2019 pada 20.45
+-- Waktu pembuatan: 23 Sep 2019 pada 12.32
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.1.24
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `reich`
+-- Database: `dekson`
 --
 
 -- --------------------------------------------------------
@@ -57,6 +57,18 @@ CREATE TABLE `address` (
   `type` varchar(100) NOT NULL,
   `sort` int(11) NOT NULL DEFAULT '100'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `address`
+--
+
+INSERT INTO `address` (`id`, `category_id`, `nama`, `address_1`, `address_2`, `telp`, `fax`, `image`, `prov`, `kota`, `email`, `lat`, `lng`, `link`, `type`, `sort`) VALUES
+(1, 0, 'Mitra 10', 'Jl. Kedungdoro 121', '', '031 22658585', '', '', 'Jawa Timur', 'Surabaya', 'surabaya@the-reich.com', '0.0000000', '0.0000000', NULL, 'product-display', 100),
+(2, 0, 'Depo Bangunan', 'Jl. Imam Bonjol 124, Denpasar', '', '0341 885545', '', '', 'Bali', 'Bali', 'bali@the-reich.com', '0.0000000', '0.0000000', NULL, 'product-display', 100),
+(3, 0, 'Mitra 10', 'Jl. TB Simatupang 12, Jakarta Selatan', '', '021 52677555', '', '', 'DKI Jakarta', 'Jakarta ', 'jakarta@the-reich.com', '0.0000000', '0.0000000', NULL, 'product-display', 100),
+(4, 0, 'Mitra 10', 'Jl. IR Juanda 2, Bandung', '', '0221 6848088', '', '', 'Jawa Barat', 'Bandung', 'bandung@the-reich.com', '0.0000000', '0.0000000', NULL, 'product-display', 100),
+(5, 0, ' REICH Hardware', 'Jl. Haji Nawi 126, Jakarta Selatan', '', '021 22658585', '', '', 'DKI Jakarta', 'Jakarta', 'jakarta@the-reich.com', '0.0000000', '0.0000000', NULL, 'store-showroom', 100),
+(6, 0, 'Makmur Abadi Hardware Store', 'Jl. Baliwerti 74, Alun Alun Contong', '', '031 5348088', '', '', 'Jawa Timur', 'Surabaya', 'surabaya@the-reich.com', '0.0000000', '0.0000000', NULL, 'store-showroom', 100);
 
 -- --------------------------------------------------------
 
@@ -1245,7 +1257,100 @@ INSERT INTO `log` (`id`, `username`, `activity`, `time`) VALUES
 (359, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-09-09 08:12:40'),
 (360, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-09-09 10:21:50'),
 (361, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-09-11 05:33:48'),
-(362, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-09-12 05:15:03');
+(362, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-09-12 05:15:03'),
+(363, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-09-16 07:29:00'),
+(364, 'info@markdesign.net', 'Setting Update', '2019-09-16 07:42:59'),
+(365, 'info@markdesign.net', 'Create Category 1', '2019-09-16 07:51:38'),
+(366, 'info@markdesign.net', 'Create Category 2', '2019-09-16 07:51:45'),
+(367, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-09-16 08:32:08'),
+(368, 'info@markdesign.net', 'Slide Controller Create 1', '2019-09-16 08:35:06'),
+(369, 'info@markdesign.net', 'Setting Update', '2019-09-16 08:36:17'),
+(370, 'info@markdesign.net', 'Setting Update', '2019-09-16 08:38:56'),
+(371, 'info@markdesign.net', 'Setting Update', '2019-09-16 08:40:50'),
+(372, 'info@markdesign.net', 'Setting Update', '2019-09-16 08:42:11'),
+(373, 'info@markdesign.net', 'Setting Update', '2019-09-16 08:42:54'),
+(374, 'info@markdesign.net', 'Setting Update', '2019-09-16 08:43:35'),
+(375, 'info@markdesign.net', 'Create Category 3', '2019-09-16 08:44:42'),
+(376, 'info@markdesign.net', 'Create Category 4', '2019-09-16 08:44:47'),
+(377, 'info@markdesign.net', 'Create Category 5', '2019-09-16 08:44:53'),
+(378, 'info@markdesign.net', 'Create Category 6', '2019-09-16 08:44:58'),
+(379, 'info@markdesign.net', 'Create Category 7', '2019-09-16 08:45:04'),
+(380, 'info@markdesign.net', 'Create Category 8', '2019-09-16 08:45:10'),
+(381, 'info@markdesign.net', 'Create Category 3', '2019-09-16 08:45:29'),
+(382, 'info@markdesign.net', 'Create Category 2', '2019-09-16 08:45:44'),
+(383, 'info@markdesign.net', 'Create Category 4', '2019-09-16 08:46:03'),
+(384, 'info@markdesign.net', 'Create Category 5', '2019-09-16 08:46:16'),
+(385, 'info@markdesign.net', 'Create Category 6', '2019-09-16 08:46:32'),
+(386, 'info@markdesign.net', 'Create Category 7', '2019-09-16 08:46:50'),
+(387, 'info@markdesign.net', 'Create Category 8', '2019-09-16 08:47:04'),
+(388, 'info@markdesign.net', 'Create Category 1', '2019-09-16 08:47:28'),
+(389, 'info@markdesign.net', 'PrdProduct Controller Create 1', '2019-09-16 08:57:24'),
+(390, 'info@markdesign.net', 'ProductController Update 1', '2019-09-16 08:57:34'),
+(391, 'info@markdesign.net', 'ProductController Update 1', '2019-09-16 08:57:39'),
+(392, 'info@markdesign.net', 'ProductController Update 1', '2019-09-16 08:57:43'),
+(393, 'info@markdesign.net', 'ProductController Update 1', '2019-09-16 08:57:47'),
+(394, 'info@markdesign.net', 'ProductController Update 1', '2019-09-16 08:57:50'),
+(395, 'info@markdesign.net', 'ProductController Update 1', '2019-09-16 08:58:33'),
+(396, 'info@markdesign.net', 'ProductController Update 1', '2019-09-16 08:58:38'),
+(397, 'info@markdesign.net', 'ProductController Update 1', '2019-09-16 08:58:43'),
+(398, 'info@markdesign.net', 'ProductController Update 1', '2019-09-16 08:58:47'),
+(399, 'info@markdesign.net', 'ProductController Update 1', '2019-09-16 08:58:55'),
+(400, 'info@markdesign.net', 'ProductController Update 1', '2019-09-16 08:59:05'),
+(401, 'info@markdesign.net', 'PrdProduct Controller Create 2', '2019-09-16 09:00:01'),
+(402, 'info@markdesign.net', 'ProductController Update 3', '2019-09-16 09:00:21'),
+(403, 'info@markdesign.net', 'ProductController Update 4', '2019-09-16 09:00:29'),
+(404, 'info@markdesign.net', 'ProductController Update 4', '2019-09-16 09:00:33'),
+(405, 'info@markdesign.net', 'ProductController Update 4', '2019-09-16 09:00:41'),
+(406, 'info@markdesign.net', 'ProductController Update 5', '2019-09-16 09:00:51'),
+(407, 'info@markdesign.net', 'ProductController Update 6', '2019-09-16 09:01:07'),
+(408, 'info@markdesign.net', 'ProductController Update 7', '2019-09-16 09:01:15'),
+(409, 'info@markdesign.net', 'ProductController Update 8', '2019-09-16 09:01:26'),
+(410, 'info@markdesign.net', 'ProductController Update 9', '2019-09-16 09:01:37'),
+(411, 'info@markdesign.net', 'ProductController Update 10', '2019-09-16 09:01:51'),
+(412, 'info@markdesign.net', 'ProductController Update 11', '2019-09-16 09:02:19'),
+(413, 'info@markdesign.net', 'ProductController Update 10', '2019-09-16 09:03:11'),
+(414, 'info@markdesign.net', 'ProductController Update 9', '2019-09-16 09:03:16'),
+(415, 'info@markdesign.net', 'ProductController Update 8', '2019-09-16 09:03:20'),
+(416, 'info@markdesign.net', 'ProductController Update 7', '2019-09-16 09:03:29'),
+(417, 'info@markdesign.net', 'Setting Update', '2019-09-16 09:05:38'),
+(418, 'info@markdesign.net', 'Address Controller Create 1', '2019-09-16 09:05:58'),
+(419, 'info@markdesign.net', 'Address Controller Create 2', '2019-09-16 09:06:28'),
+(420, 'info@markdesign.net', 'Address Controller Create 3', '2019-09-16 09:07:04'),
+(421, 'info@markdesign.net', 'Address Controller Create 4', '2019-09-16 09:07:34'),
+(422, 'info@markdesign.net', 'Address Controller Create 5', '2019-09-16 09:08:10'),
+(423, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-09-16 09:08:53'),
+(424, 'info@markdesign.net', 'Address Controller Create 6', '2019-09-16 09:08:54'),
+(425, 'info@markdesign.net', 'Address Controller Update 5', '2019-09-16 10:03:45'),
+(426, 'info@markdesign.net', 'Address Controller Update 6', '2019-09-16 10:03:50'),
+(427, 'info@markdesign.net', 'Address Controller Update 4', '2019-09-16 10:04:02'),
+(428, 'info@markdesign.net', 'Address Controller Update 3', '2019-09-16 10:04:07'),
+(429, 'info@markdesign.net', 'Address Controller Update 2', '2019-09-16 10:04:12'),
+(430, 'info@markdesign.net', 'Address Controller Update 1', '2019-09-16 10:04:16'),
+(431, 'info@markdesign.net', 'SlideController Update 1', '2019-09-16 11:32:49'),
+(432, 'info@markdesign.net', 'Setting Update', '2019-09-16 11:40:17'),
+(433, 'info@markdesign.net', 'Setting Update', '2019-09-16 11:48:17'),
+(434, 'info@markdesign.net', 'Setting Update', '2019-09-16 11:48:36'),
+(435, 'info@markdesign.net', 'ProductController Update 11', '2019-09-16 12:35:12'),
+(436, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-09-23 05:13:44'),
+(437, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-09-23 06:03:04'),
+(438, 'info@markdesign.net', 'PrdCategoryController Create 1', '2019-09-23 08:36:43'),
+(439, 'info@markdesign.net', 'Create Category 1', '2019-09-23 09:00:25'),
+(440, 'info@markdesign.net', 'PrdCategoryController Create 2', '2019-09-23 09:00:46'),
+(441, 'info@markdesign.net', 'PrdCategoryController Create 3', '2019-09-23 09:07:06'),
+(442, 'info@markdesign.net', 'Create Category 2', '2019-09-23 09:07:19'),
+(443, 'info@markdesign.net', 'Create Category 1', '2019-09-23 09:07:35'),
+(444, 'info@markdesign.net', 'Create Category 4', '2019-09-23 09:07:52'),
+(445, 'info@markdesign.net', 'Create Category 4', '2019-09-23 09:08:07'),
+(446, 'info@markdesign.net', 'PrdCategoryController Create 5', '2019-09-23 09:08:25'),
+(447, 'info@markdesign.net', 'PrdCategoryController Create 6', '2019-09-23 09:08:44'),
+(448, 'info@markdesign.net', 'Create Category 7', '2019-09-23 09:09:56'),
+(449, 'info@markdesign.net', 'Create Category 8', '2019-09-23 09:10:02'),
+(450, 'info@markdesign.net', 'Create Category 9', '2019-09-23 09:10:05'),
+(451, 'info@markdesign.net', 'Create Category 10', '2019-09-23 09:10:09'),
+(452, 'info@markdesign.net', 'Create Category 11', '2019-09-23 09:10:19'),
+(453, 'info@markdesign.net', 'Create Category 12', '2019-09-23 09:10:24'),
+(454, 'info@markdesign.net', 'Create Category 13', '2019-09-23 09:10:28'),
+(455, 'info@markdesign.net', 'Create Category 14', '2019-09-23 09:10:33');
 
 -- --------------------------------------------------------
 
@@ -1754,6 +1859,26 @@ CREATE TABLE `prd_category` (
   `data` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `prd_category`
+--
+
+INSERT INTO `prd_category` (`id`, `parent_id`, `sort`, `image`, `image2`, `image3`, `type`, `data`) VALUES
+(1, 0, 1, '', '', '', 'filtercat', ''),
+(2, 0, 2, '', '', '', 'filtercat', ''),
+(3, 0, 3, '', '', '', 'filtercat', ''),
+(4, 0, 4, '', '', '', 'filtercat', ''),
+(5, 0, 5, '', '', '', 'filtercat', ''),
+(6, 0, 6, '', '', '', 'filtercat', ''),
+(7, 0, 1, '', '', '', 'category', ''),
+(8, 0, 2, '', '', '', 'category', ''),
+(9, 0, 3, '', '', '', 'category', ''),
+(10, 0, 4, '', '', '', 'category', ''),
+(11, 0, 5, '', '', '', 'category', ''),
+(12, 0, 6, '', '', '', 'category', ''),
+(13, 0, 7, '', '', '', 'category', ''),
+(14, 0, 8, '', '', '', 'category', '');
+
 -- --------------------------------------------------------
 
 --
@@ -1768,6 +1893,26 @@ CREATE TABLE `prd_category_description` (
   `desc` text NOT NULL,
   `data` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `prd_category_description`
+--
+
+INSERT INTO `prd_category_description` (`id`, `category_id`, `language_id`, `name`, `desc`, `data`) VALUES
+(6, 1, 2, 'BLACK SERIES STYLE COLLECTION', 'A selection of expertly crafted accessories tinted in charming and solid black color, combining leading-edge matte spotless technology with enduring style.', ''),
+(5, 2, 2, 'ELECTRONIC LOCK PRODUCTS', 'Smart and reliable solutions from Dekkson for the practical living and keyless secure solution for your home.', ''),
+(4, 3, 2, 'VINTAGE SERIES COLLECTION', 'A selection of expertly crafted accessories tinted in charming and solid black color, combining leading-edge matte spotless technology with enduring style.', ''),
+(8, 4, 2, 'DEKKSON NEO SERIES COLLECTION', 'Smart and reliable solutions from Dekkson for the practical living and keyless secure solution for your home.', ''),
+(9, 5, 2, 'THE LUXURIOUS PRESTIGE SERIES COLLECTION', 'A selection of expertly crafted accessories tinted in charming and solid black color, combining leading-edge matte spotless technology with enduring style.', ''),
+(10, 6, 2, 'DEKKSON HOTEL SERIES COLLECTION', 'Smart and reliable solutions from Dekkson for the practical living and keyless secure solution for your home.', ''),
+(11, 7, 2, 'Door & Window', '', ''),
+(12, 8, 2, 'Slide & Fold Door', '', ''),
+(13, 9, 2, 'Glass', '', ''),
+(14, 10, 2, 'Aluminum', '', ''),
+(15, 11, 2, 'Steel Door', '', ''),
+(16, 12, 2, 'Furniture', '', ''),
+(17, 13, 2, 'Electronic Lock', '', ''),
+(18, 14, 2, 'Others', '', '');
 
 -- --------------------------------------------------------
 
@@ -1846,7 +1991,8 @@ CREATE TABLE `prd_product` (
   `onsale` int(11) NOT NULL,
   `rekomendasi` int(11) NOT NULL,
   `turun_harga` int(11) NOT NULL,
-  `urutan` int(100) DEFAULT '0'
+  `urutan` int(100) DEFAULT '0',
+  `filter_collection` text
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -2048,53 +2194,72 @@ INSERT INTO `setting` (`id`, `name`, `label`, `value`, `type`, `hide`, `group`, 
 (14, 'home_subtitle_1', 'Subtitle', '', 'text', 0, 'data', 'y', 0),
 (15, 'home2_subtitle', 'Subtitle', '', 'text', 0, 'data', 'y', 0),
 (16, 'home2_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(17, 'home2_picture', 'Picture', '', 'image', 0, 'data', 'n', 0),
+(17, 'home2_picture', 'Picture', 'b491f2cdcdour-partner-home.jpg', 'image', 0, 'data', 'n', 0),
 (18, 'home3_title', 'Content', '', 'text', 0, 'data', 'y', 0),
 (19, 'home3_subtitle', 'Subtitle', '', 'text', 0, 'data', 'y', 0),
-(20, 'home3_icons_picture_1', 'Picture Icon', '', 'image', 0, 'data', 'n', 0),
+(20, 'home3_icons_picture_1', 'Picture Icon', '63a92ce7abquality1.png', 'image', 0, 'data', 'n', 0),
 (21, 'home3_icons_title_1', 'Title', '', 'text', 0, 'data', 'y', 0),
-(22, 'home3_icons_picture_2', 'Picture Icon', '', 'image', 0, 'data', 'n', 0),
+(22, 'home3_icons_picture_2', 'Picture Icon', '5fd5d9df0equality2.png', 'image', 0, 'data', 'n', 0),
 (23, 'home3_icons_title_2', 'Title', '', 'text', 0, 'data', 'y', 0),
-(24, 'home3_icons_picture_3', 'Picture Icon', '', 'image', 0, 'data', 'n', 0),
+(24, 'home3_icons_picture_3', 'Picture Icon', '0676bca610quality3.png', 'image', 0, 'data', 'n', 0),
 (25, 'home3_icons_title_3', 'Title', '', 'text', 0, 'data', 'y', 0),
-(26, 'home3_icons_picture_4', 'Picture Icon', '', 'image', 0, 'data', 'n', 0),
+(26, 'home3_icons_picture_4', 'Picture Icon', 'b729913bd2quality4.png', 'image', 0, 'data', 'n', 0),
 (27, 'home3_icons_title_4', 'Title', '', 'text', 0, 'data', 'y', 0),
-(28, 'about_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
+(28, 'about_hero_image', 'Image', '700eba85dfcover.jpg', 'image', 0, 'data', 'n', 0),
 (29, 'about_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
 (30, 'about_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
 (31, 'about1_content', 'Top Content', '', 'text', 0, 'data', 'y', 0),
 (32, 'about2_titles_1', 'Title', '', 'text', 0, 'data', 'y', 0),
 (33, 'about2_content_1', 'Content', '', 'text', 0, 'data', 'y', 0),
-(34, 'about2_pictures_1', 'Banner Image', '', 'image', 0, 'data', 'n', 0),
+(34, 'about2_pictures_1', 'Banner Image', 'cc47e2d93cabout1.jpg', 'image', 0, 'data', 'n', 0),
 (35, 'about2_titles_2', 'Title', '', 'text', 0, 'data', 'y', 0),
 (36, 'about2_content_2', 'Content', '', 'text', 0, 'data', 'y', 0),
-(37, 'about2_pictures_2', 'Banner Image', '', 'image', 0, 'data', 'n', 0),
+(37, 'about2_pictures_2', 'Banner Image', 'e295b9eecbabout2.jpg', 'image', 0, 'data', 'n', 0),
 (38, 'about3_title', 'Title', '', 'text', 0, 'data', 'y', 0),
 (39, 'about3_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(40, 'about3_background', 'Picture', '', 'image', 0, 'data', 'n', 0),
+(40, 'about3_background', 'Picture', 'e0eed66146aboutsec2.jpg', 'image', 0, 'data', 'n', 0),
 (41, 'about4_subtitle', 'Subtitles', '', 'text', 0, 'data', 'y', 0),
 (42, 'about4_contents', 'Content', '', 'text', 0, 'data', 'y', 0),
 (43, 'store_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
 (44, 'store_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
 (45, 'store_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
-(46, 'partner_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
+(46, 'partner_hero_image', 'Image', '1a7b52ec1acover.jpg', 'image', 0, 'data', 'n', 0),
 (47, 'partner_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
 (48, 'partner_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
 (49, 'partner_content_1', 'Content', '', 'text', 0, 'data', 'y', 0),
 (50, 'partner2_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(51, 'partner2_image', 'Image', '', 'image', 0, 'data', 'n', 0),
+(51, 'partner2_image', 'Image', '933c80f06bpartnersec1.jpg', 'image', 0, 'data', 'n', 0),
 (52, 'partner3_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(53, 'partner3_image', 'Image', '', 'image', 0, 'data', 'n', 0),
+(53, 'partner3_image', 'Image', 'e86e18806bb8f97a7b2bpartnersec2.jpg', 'image', 0, 'data', 'n', 0),
 (54, 'partner4_subtitle', 'Subtitle', '', 'text', 0, 'data', 'y', 0),
 (55, 'partner4_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(56, 'how_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
+(56, 'how_hero_image', 'Image', '8521bbda87cover.jpg', 'image', 0, 'data', 'n', 0),
 (57, 'how_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
 (58, 'how_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
 (59, 'how_content_1', 'Content', '', 'text', 0, 'data', 'y', 0),
 (60, 'how_content_bottom_2', 'Content Bottom', '', 'text', 0, 'data', 'y', 0),
-(61, 'how_wa_contacts', 'Wa How to Order', '', 'text', 0, 'data', 'n', 0),
-(62, 'url_tokopedia', 'Url Tokopedia', '', 'text', 0, 'data', 'n', 0),
-(63, 'url_bukalapak', 'Url Bukalapak', '', 'text', 0, 'data', 'n', 0);
+(61, 'how_wa_contacts', 'Wa How to Order', '081 5530 78875', 'text', 0, 'data', 'n', 0),
+(62, 'url_tokopedia', 'Url Tokopedia', '#', 'text', 0, 'data', 'n', 0),
+(63, 'url_bukalapak', 'Url Bukalapak', '#', 'text', 0, 'data', 'n', 0),
+(64, 'contact_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
+(65, 'contact_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
+(66, 'contact_content', 'Content', '', 'text', 0, 'data', 'y', 0),
+(67, 'contact_content2', 'Content Address', '', 'text', 0, 'data', 'y', 0),
+(68, 'contact_phone', 'Phone', '', 'text', 0, 'data', 'n', 0),
+(69, 'contact_wa', 'Whatsapp', '', 'text', 0, 'data', 'n', 0),
+(70, 'contact_opening_time', 'Opening Time', '', 'text', 0, 'data', 'n', 0),
+(71, 'url_facebook', 'URL Facebook', '', 'text', 0, 'data', 'n', 0),
+(72, 'url_instagram', 'URL Instagram', '', 'text', 0, 'data', 'n', 0),
+(73, 'quality_hero_image', 'Image', 'c83bd9461a1a7b52ec1acover.jpg', 'image', 0, 'data', 'n', 0),
+(74, 'quality_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
+(75, 'quality_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
+(76, 'quality1_content', 'Top Content', '', 'text', 0, 'data', 'y', 0),
+(77, 'quality2_titles_1', 'Title', '', 'text', 0, 'data', 'y', 0),
+(78, 'quality2_content_1', 'Content', '', 'text', 0, 'data', 'y', 0),
+(79, 'quality2_pictures_1', 'Banner Image', 'cc11e8ec21cc47e2d93cabout1.jpg', 'image', 0, 'data', 'n', 0),
+(80, 'quality2_titles_2', 'Title', '', 'text', 0, 'data', 'y', 0),
+(81, 'quality2_content_2', 'Content', '', 'text', 0, 'data', 'y', 0),
+(82, 'quality2_pictures_2', 'Banner Image', '730c69008fe295b9eecbabout2.jpg', 'image', 0, 'data', 'n', 0);
 
 -- --------------------------------------------------------
 
@@ -2108,6 +2273,51 @@ CREATE TABLE `setting_description` (
   `language_id` int(11) NOT NULL,
   `value` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `setting_description`
+--
+
+INSERT INTO `setting_description` (`id`, `setting_id`, `language_id`, `value`) VALUES
+(1, 13, 2, 'Reich Architecture & Hardware Accessories Category'),
+(2, 14, 2, 'Click here to view all products.'),
+(3, 15, 2, '<h3>Want to become our partner in distributing<br><strong>Reich hardware & accessories products?</strong></h3><p>Reich Architectural & Interior accessories will bring you an excellent plan to market and distribute smart and technological solution products. Expect a profitable business plan that can help construct and build your relationship with modern customers and furniture makers. Come and join us, our representative will be ready to answer your inquiries.</p>'),
+(4, 16, 2, 'Reich Architectural & Interior accessories will bring you an excellent plan to market and distribute smart and technological solution products. Expect a profitable business plan that can help construct and build your relationship with modern customers and furniture makers. Come and join us, our representative will be ready to answer your inquiries.'),
+(5, 18, 2, 'Reich Standard Quality & Advantage'),
+(6, 19, 2, '4 basic concepts that act as a company and product characteristicof Reich.'),
+(7, 21, 2, 'Never ending creative Inovation, development and creation.'),
+(8, 23, 2, 'Consistency in quality and international standard checking.'),
+(9, 25, 2, 'Good business plan for profitable partnership and distribution.'),
+(10, 27, 2, 'Optimum value that exceeds price and expectations.'),
+(11, 29, 2, 'About'),
+(12, 30, 2, 'Experience and passion towards efficiency brought us to where we are right now'),
+(13, 31, 2, '<h3>Born from opportunity</h3><h5>The story of Reich Architectural & Interior Furnishing Hardware unfolded over three decades ago in a successful hardware appliances shop owned by the founders of Reich. We are working closely with architects, designers and builders in a fast forward modern civilisation that requires high end quality furnished doors, windows and door hardware for upscale, custom-built homes.</h5><p>Looking from the opportunity that our founders sees in their daily operationals, Reich was meant to answer the need for quality furnishings, as many architects and furniture makers repeatedly asked for pieces that simply didn\'t exist. They were looking for accessories that would tie their projects together–products with one-of-a-kind appliances that could be used throughout the entire system to function well. Reich products are dream pieces, something outside ordinary to make those furnishing exceptional.</p>'),
+(14, 32, 2, 'Learning from problems, presenting product solutions'),
+(15, 33, 2, '<p>Whenever a need arose on a project for a particular type of hardware that just couldn’t be found, the founders of Reich was simply turn that problems into a future project solution to build. Starting from the simple appliances such as wooden door hinge, the client then asked, “Can you do the glass?” Our reply? “Sure, we can do it.” The request and production evolved into such sophisticated series for the home and commercial building furnishes, then on to all the digital door knob and to hardwares in the bathroom. Next stop, door accessories and hinges, and could be plumbing and lighting. Reich will come as no surprise that the company philosophy of never saying “no” and “always embrace problem then turn it to opportunity” was the inspiration behind the creation of Reich product series. And that was just the beginning.</p>'),
+(16, 35, 2, 'Passion towards quality'),
+(17, 36, 2, '<p>Our hardware is expertly crafted in the high technology manufacturing factory which uses only the finest sustainable art-grade materials and precision-quality mechanisms that stand up to the test of time. In fact, all products are tested to function and quality standard operation procedures are performed to all the finish goods. Each piece is individually checked and packed if it passes the Quality Control checking. The Reich brand mark were proudly given to each of our product in the needs to assure our customers a worry free handling quality when they see it somewhere around the corner.</p>'),
+(18, 38, 2, 'Our Commitment'),
+(19, 39, 2, '<p>The Reich architectural furnishings hardware and appliances product line will present a never ending range of styles and options, allowing customers a unique and smart solutions for many types of applications. Our design strategy is to learn from problems and answer it through a high quality and high efficiency products. We are driven by you, our customers, and what you value. We will ensure our quality control exceeds the tolerance level requirements.</p>'),
+(20, 41, 2, 'Interested for a partnership opportunity with Reich?'),
+(21, 42, 2, '<p><a href=\"http://192.168.1.2/reich/home/about#\">Click here</a> to find out many possibilities ahead.</p>'),
+(22, 47, 2, 'Partnership'),
+(23, 48, 2, 'Let’s grow together with Reich'),
+(24, 49, 2, '<h3>We believe that by growing together we are stronger</h3><h5>Reich invites you to join our successful sales plan, and let’s grow it together. Whether you are an interior furniture maket, a contractor or furnishing industry applicator, an architect, or professional consultant for buildings and interiors, we have so many business models that you can take benefits from to your side.</h5><p>With our strong Reich brand that will be seen as the benchmark of smart efficent and high quality product, we will be covering all areas of infrastructure development and interior furnishings for all sorts of buildings. Working towards a partnership with Reich ensures your upcoming business projects and sales to increase and to be successful - For sure.</p>'),
+(25, 50, 2, '<h3>Are you an interior and architectural accessories store, or a sales distribution dealership?</h3><p>Reich products can easily benefit you through an exciting and profitable marketing plan for long term partnership. Reich’s solution based products are within reach when it comes to price, and it brings value to the customers who bought it and applied it to the furnishing projects. Reich is committed to provide exceptinal product warranty that benefits your store and bring a worry free feel to all your customers.</p>'),
+(26, 52, 2, '<h3>With Quality Products, You Only Need To Concentrate On Marketing Strategy</h3><p>Reich’s architectural hardware and interior furnishings appliances product lines are dedicating an in-house R&D department to execute thorough and complex one on one checking processes as well as invention of new product, driven by market request and trends.</p>'),
+(27, 54, 2, 'Non stop support to our partner'),
+(28, 55, 2, '<p>Product perfection is only half the battle. Through multiple support, plans and strategies, Reich’s marketing team will help you run and penetrate your target market right from the product introduction to product usage continuity.</p>'),
+(29, 57, 2, 'How To Buy'),
+(30, 58, 2, 'Get Reich hardware appliances product easily'),
+(31, 59, 2, 'Get Reich Architectural Hardware & Appliances through our distribution stores and our online merchant partners.'),
+(32, 60, 2, '<h4>Interested for a partnership opportunity with Reich?</h4><p><a href=\"http://192.168.1.2/reich/home/howtobuy#\">Click here</a> to find out many possibilities ahead.</p>'),
+(33, 74, 2, 'Quality'),
+(34, 75, 2, 'Experience and passion towards efficiency brought us to where we are right now'),
+(35, 76, 2, '<h3>Born from opportunity</h3><h5>The story of Reich Architectural & Interior Furnishing Hardware unfolded over three decades ago in a successful hardware appliances shop owned by the founders of Reich. We are working closely with architects, designers and builders in a fast forward modern civilisation that requires high end quality furnished doors, windows and door hardware for upscale, custom-built homes.</h5><p>Looking from the opportunity that our founders sees in their daily operationals, Reich was meant to answer the need for quality furnishings, as many architects and furniture makers repeatedly asked for pieces that simply didn\'t exist. They were looking for accessories that would tie their projects together–products with one-of-a-kind appliances that could be used throughout the entire system to function well. Reich products are dream pieces, something outside ordinary to make those furnishing exceptional.\r\n</p>'),
+(36, 77, 2, 'Learning from problems, presenting product solutions'),
+(37, 78, 2, '<p>Whenever a need arose on a project for a particular type of hardware that just couldn’t be found, the founders of Reich was simply turn that problems into a future project solution to build. Starting from the simple appliances such as wooden door hinge, the client then asked, “Can you do the glass?” Our reply? “Sure, we can do it.” The request and production evolved into such sophisticated series for the home and commercial building furnishes, then on to all the digital door knob and to hardwares in the bathroom. Next stop, door accessories and hinges, and could be plumbing and lighting. Reich will come as no surprise that the company philosophy of never saying “no” and “always embrace problem then turn it to opportunity” was the inspiration behind the creation of Reich product series. And that was just the beginning.</p>'),
+(38, 80, 2, 'Passion towards quality'),
+(39, 81, 2, '<p>Whenever a need arose on a project for a particular type of hardware that just couldn’t be found, the founders of Reich was simply turn that problems into a future project solution to build. Starting from the simple appliances such as wooden door hinge, the client then asked, “Can you do the glass?” Our reply? “Sure, we can do it.” The request and production evolved into such sophisticated series for the home and commercial building furnishes, then on to all the digital door knob and to hardwares in the bathroom. Next stop, door accessories and hinges, and could be plumbing and lighting. Reich will come as no surprise that the company philosophy of never saying “no” and “always embrace problem then turn it to opportunity” was the inspiration behind the creation of Reich product series. And that was just the beginning.</p>');
 
 -- --------------------------------------------------------
 
@@ -2849,6 +3059,13 @@ CREATE TABLE `sl_slide` (
   `sort` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `sl_slide`
+--
+
+INSERT INTO `sl_slide` (`id`, `topik_id`, `image`, `image2`, `url`, `active`, `date_input`, `date_update`, `insert_by`, `last_update_by`, `writer`, `sort`) VALUES
+(1, 0, '7ea43-index.jpg', '0ac42-mob-fcs-1.jpg', NULL, 1, '0000-00-00 00:00:00', '2019-09-16 18:32:49', 'info@markdesign.net', 'info@markdesign.net', '', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -2866,6 +3083,13 @@ CREATE TABLE `sl_slide_description` (
   `url_teks` varchar(200) NOT NULL,
   `url` varchar(200) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `sl_slide_description`
+--
+
+INSERT INTO `sl_slide_description` (`id`, `slide_id`, `language_id`, `title`, `subtitle`, `content`, `periode`, `url_teks`, `url`) VALUES
+(2, 1, 2, 'Reich furniture accessories and mechanical hardware will bring efficiency and reliability to your home.', 'Learn more about the breakthrough smart products brought by Reich furniture hardware & accessories t', '', '', '', '#');
 
 -- --------------------------------------------------------
 
@@ -2995,28 +3219,6 @@ CREATE TABLE `to_toko_product` (
   `product_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `to_toko_product`
---
-
-INSERT INTO `to_toko_product` (`id`, `toko_id`, `product_id`) VALUES
-(8, 1, 960),
-(7, 1, 105),
-(6, 1, 719),
-(5, 1, 264),
-(9, 1, 223),
-(10, 1, 930),
-(11, 1, 475),
-(12, 1, 732),
-(13, 4, 264),
-(14, 4, 560),
-(15, 4, 960),
-(16, 4, 505),
-(17, 4, 719),
-(18, 4, 678),
-(19, 4, 475),
-(20, 4, 277);
-
 -- --------------------------------------------------------
 
 --
@@ -3126,112 +3328,12 @@ INSERT INTO `tt_text` (`id`, `category`, `message`) VALUES
 (66, 'admin', 'Store Location');
 
 -- --------------------------------------------------------
-
---
--- Stand-in struktur untuk tampilan `view_blog`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_blog` (
-`id` int(11)
-,`topik_id` int(11)
-,`image` varchar(255)
-,`active` int(11)
-,`date_input` datetime
-,`date_update` datetime
-,`insert_by` varchar(255)
-,`last_update_by` varchar(255)
-,`writer` int(25)
-,`id2` int(11)
-,`blog_id` int(11)
-,`language_id` int(11)
-,`title` varchar(255)
-,`content` text
-,`quote` text
-);
-
--- --------------------------------------------------------
-
---
--- Stand-in struktur untuk tampilan `view_category`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_category` (
-`id` int(11)
-,`parent_id` int(11)
-,`sort` int(11)
-,`image` varchar(200)
-,`type` varchar(100)
-,`data` text
-,`id2` int(11)
-,`category_id` int(11)
-,`language_id` int(11)
-,`name` varchar(100)
-,`data2` text
-);
-
--- --------------------------------------------------------
-
---
--- Stand-in struktur untuk tampilan `view_gallery`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_gallery` (
-`id` int(11)
-,`topik_id` int(11)
-,`image` varchar(255)
-,`image2` varchar(200)
-,`active` int(11)
-,`date_input` datetime
-,`date_update` datetime
-,`insert_by` varchar(255)
-,`last_update_by` varchar(255)
-,`writer` varchar(200)
-,`city` varchar(100)
-,`harga` int(11)
-,`color` varchar(100)
-,`orientation` int(11)
-,`id2` int(11)
-,`gallery_id` int(11)
-,`language_id` int(11)
-,`title` varchar(255)
-,`sub_title` text
-,`sub_title_2` text
-,`content` text
-);
-
--- --------------------------------------------------------
-
---
--- Stand-in struktur untuk tampilan `view_slide`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_slide` (
-`id` int(11)
-,`topik_id` int(11)
-,`image` varchar(255)
-,`active` int(11)
-,`date_input` datetime
-,`date_update` datetime
-,`insert_by` varchar(255)
-,`last_update_by` varchar(255)
-,`writer` varchar(200)
-,`id2` int(11)
-,`slide_id` int(11)
-,`language_id` int(11)
-,`title` varchar(255)
-,`content` text
-,`url` varchar(200)
-,`sort` int(11)
-);
-
--- --------------------------------------------------------
-
 --
 -- Struktur untuk view `view_blog`
 --
 DROP TABLE IF EXISTS `view_blog`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_blog`  AS  select `pg_blog`.`id` AS `id`,`pg_blog`.`topik_id` AS `topik_id`,`pg_blog`.`image` AS `image`,`pg_blog`.`active` AS `active`,`pg_blog`.`date_input` AS `date_input`,`pg_blog`.`date_update` AS `date_update`,`pg_blog`.`insert_by` AS `insert_by`,`pg_blog`.`last_update_by` AS `last_update_by`,`pg_blog`.`writer` AS `writer`,`pg_blog_description`.`id` AS `id2`,`pg_blog_description`.`blog_id` AS `blog_id`,`pg_blog_description`.`language_id` AS `language_id`,`pg_blog_description`.`title` AS `title`,`pg_blog_description`.`content` AS `content`,`pg_blog_description`.`quote` AS `quote` from (`pg_blog` join `pg_blog_description` on((`pg_blog`.`id` = `pg_blog_description`.`blog_id`))) ;
+CREATE VIEW `view_blog`  AS  select `pg_blog`.`id` AS `id`,`pg_blog`.`topik_id` AS `topik_id`,`pg_blog`.`image` AS `image`,`pg_blog`.`active` AS `active`,`pg_blog`.`date_input` AS `date_input`,`pg_blog`.`date_update` AS `date_update`,`pg_blog`.`insert_by` AS `insert_by`,`pg_blog`.`last_update_by` AS `last_update_by`,`pg_blog`.`writer` AS `writer`,`pg_blog_description`.`id` AS `id2`,`pg_blog_description`.`blog_id` AS `blog_id`,`pg_blog_description`.`language_id` AS `language_id`,`pg_blog_description`.`title` AS `title`,`pg_blog_description`.`content` AS `content`,`pg_blog_description`.`quote` AS `quote` from (`pg_blog` join `pg_blog_description` on((`pg_blog`.`id` = `pg_blog_description`.`blog_id`))) ;
 
 -- --------------------------------------------------------
 
@@ -3240,7 +3342,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `view_category`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_category`  AS  select `prd_category`.`id` AS `id`,`prd_category`.`parent_id` AS `parent_id`,`prd_category`.`sort` AS `sort`,`prd_category`.`image` AS `image`,`prd_category`.`type` AS `type`,`prd_category`.`data` AS `data`,`prd_category_description`.`id` AS `id2`,`prd_category_description`.`category_id` AS `category_id`,`prd_category_description`.`language_id` AS `language_id`,`prd_category_description`.`name` AS `name`,`prd_category_description`.`data` AS `data2` from (`prd_category` join `prd_category_description` on((`prd_category`.`id` = `prd_category_description`.`category_id`))) ;
+CREATE VIEW `view_category`  AS  select `prd_category`.`id` AS `id`,`prd_category`.`parent_id` AS `parent_id`,`prd_category`.`sort` AS `sort`,`prd_category`.`image` AS `image`,`prd_category`.`type` AS `type`,`prd_category`.`data` AS `data`,`prd_category_description`.`id` AS `id2`,`prd_category_description`.`category_id` AS `category_id`,`prd_category_description`.`language_id` AS `language_id`,`prd_category_description`.`name` AS `name`,`prd_category_description`.`data` AS `data2` from (`prd_category` join `prd_category_description` on((`prd_category`.`id` = `prd_category_description`.`category_id`))) ;
 
 -- --------------------------------------------------------
 
@@ -3249,7 +3351,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `view_gallery`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_gallery`  AS  select `gal_gallery`.`id` AS `id`,`gal_gallery`.`topik_id` AS `topik_id`,`gal_gallery`.`image` AS `image`,`gal_gallery`.`image2` AS `image2`,`gal_gallery`.`active` AS `active`,`gal_gallery`.`date_input` AS `date_input`,`gal_gallery`.`date_update` AS `date_update`,`gal_gallery`.`insert_by` AS `insert_by`,`gal_gallery`.`last_update_by` AS `last_update_by`,`gal_gallery`.`writer` AS `writer`,`gal_gallery`.`city` AS `city`,`gal_gallery`.`harga` AS `harga`,`gal_gallery`.`color` AS `color`,`gal_gallery`.`orientation` AS `orientation`,`gal_gallery_description`.`id` AS `id2`,`gal_gallery_description`.`gallery_id` AS `gallery_id`,`gal_gallery_description`.`language_id` AS `language_id`,`gal_gallery_description`.`title` AS `title`,`gal_gallery_description`.`sub_title` AS `sub_title`,`gal_gallery_description`.`sub_title_2` AS `sub_title_2`,`gal_gallery_description`.`content` AS `content` from (`gal_gallery` join `gal_gallery_description` on((`gal_gallery`.`id` = `gal_gallery_description`.`gallery_id`))) ;
+CREATE VIEW `view_gallery`  AS  select `gal_gallery`.`id` AS `id`,`gal_gallery`.`topik_id` AS `topik_id`,`gal_gallery`.`image` AS `image`,`gal_gallery`.`image2` AS `image2`,`gal_gallery`.`active` AS `active`,`gal_gallery`.`date_input` AS `date_input`,`gal_gallery`.`date_update` AS `date_update`,`gal_gallery`.`insert_by` AS `insert_by`,`gal_gallery`.`last_update_by` AS `last_update_by`,`gal_gallery`.`writer` AS `writer`,`gal_gallery`.`city` AS `city`,`gal_gallery`.`harga` AS `harga`,`gal_gallery`.`color` AS `color`,`gal_gallery`.`orientation` AS `orientation`,`gal_gallery_description`.`id` AS `id2`,`gal_gallery_description`.`gallery_id` AS `gallery_id`,`gal_gallery_description`.`language_id` AS `language_id`,`gal_gallery_description`.`title` AS `title`,`gal_gallery_description`.`sub_title` AS `sub_title`,`gal_gallery_description`.`sub_title_2` AS `sub_title_2`,`gal_gallery_description`.`content` AS `content` from (`gal_gallery` join `gal_gallery_description` on((`gal_gallery`.`id` = `gal_gallery_description`.`gallery_id`))) ;
 
 -- --------------------------------------------------------
 
@@ -3258,7 +3360,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `view_slide`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_slide`  AS  select `sl_slide`.`id` AS `id`,`sl_slide`.`topik_id` AS `topik_id`,`sl_slide`.`image` AS `image`,`sl_slide`.`active` AS `active`,`sl_slide`.`date_input` AS `date_input`,`sl_slide`.`date_update` AS `date_update`,`sl_slide`.`insert_by` AS `insert_by`,`sl_slide`.`last_update_by` AS `last_update_by`,`sl_slide`.`writer` AS `writer`,`sl_slide_description`.`id` AS `id2`,`sl_slide_description`.`slide_id` AS `slide_id`,`sl_slide_description`.`language_id` AS `language_id`,`sl_slide_description`.`title` AS `title`,`sl_slide_description`.`content` AS `content`,`sl_slide_description`.`url` AS `url`,`sl_slide`.`sort` AS `sort` from (`sl_slide` join `sl_slide_description` on((`sl_slide_description`.`slide_id` = `sl_slide`.`id`))) ;
+CREATE VIEW `view_slide`  AS  select `sl_slide`.`id` AS `id`,`sl_slide`.`topik_id` AS `topik_id`,`sl_slide`.`image` AS `image`,`sl_slide`.`active` AS `active`,`sl_slide`.`date_input` AS `date_input`,`sl_slide`.`date_update` AS `date_update`,`sl_slide`.`insert_by` AS `insert_by`,`sl_slide`.`last_update_by` AS `last_update_by`,`sl_slide`.`writer` AS `writer`,`sl_slide_description`.`id` AS `id2`,`sl_slide_description`.`slide_id` AS `slide_id`,`sl_slide_description`.`language_id` AS `language_id`,`sl_slide_description`.`title` AS `title`,`sl_slide_description`.`content` AS `content`,`sl_slide_description`.`url` AS `url`,`sl_slide`.`sort` AS `sort` from (`sl_slide` join `sl_slide_description` on((`sl_slide_description`.`slide_id` = `sl_slide`.`id`))) ;
 
 --
 -- Indexes for dumped tables
@@ -3652,7 +3754,7 @@ ALTER TABLE `about_image`
 -- AUTO_INCREMENT untuk tabel `address`
 --
 ALTER TABLE `address`
-  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `banner`
@@ -3724,7 +3826,7 @@ ALTER TABLE `language`
 -- AUTO_INCREMENT untuk tabel `log`
 --
 ALTER TABLE `log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=363;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=456;
 
 --
 -- AUTO_INCREMENT untuk tabel `me_member`
@@ -3844,13 +3946,13 @@ ALTER TABLE `prd_brand_description`
 -- AUTO_INCREMENT untuk tabel `prd_category`
 --
 ALTER TABLE `prd_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_category_description`
 --
 ALTER TABLE `prd_category_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_category_product`
@@ -3922,13 +4024,13 @@ ALTER TABLE `sertifikasi`
 -- AUTO_INCREMENT untuk tabel `setting`
 --
 ALTER TABLE `setting`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 
 --
 -- AUTO_INCREMENT untuk tabel `setting_description`
 --
 ALTER TABLE `setting_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT untuk tabel `shp_shipping_price`
@@ -3940,13 +4042,13 @@ ALTER TABLE `shp_shipping_price`
 -- AUTO_INCREMENT untuk tabel `sl_slide`
 --
 ALTER TABLE `sl_slide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `sl_slide_description`
 --
 ALTER TABLE `sl_slide_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_group`
@@ -3976,7 +4078,7 @@ ALTER TABLE `to_toko`
 -- AUTO_INCREMENT untuk tabel `to_toko_product`
 --
 ALTER TABLE `to_toko_product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `trips`
