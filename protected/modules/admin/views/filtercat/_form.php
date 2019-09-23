@@ -46,20 +46,37 @@
 	}
 	?>
 
-	<?php echo $form->textFieldRow($model,'kode',array('class'=>'input-block-level')); ?>
-	<?php /*
+	<?php
+	foreach ($modelDesc as $key => $value) {
+		$lang = Language::model()->getName($key);
+		?>
+		<div class="pj-multilang-wrap myLanguage2 control-group" style="display: <?php if ($key==$this->setting['lang_deff']): ?>block<?php else: ?>none<?php endif ?>;" data-id="<?php echo $lang->id ?>">
+
+		<?php
+		echo $form->labelEx($value, '['.$lang->code.']desc');
+	    echo $form->textArea($value,'['.$lang->code.']desc',array('class'=>'span8'));
+	    ?>
+	    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$lang->code.'.png' ?>"></span>
+	    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
+		</div>
+	    <?php
+	}
+	?>
+
+	<?php // echo $form->textFieldRow($model,'kode',array('class'=>'input-block-level')); ?>
+	
 	<?php echo $form->fileFieldRow($model,'image',array(
-	'hint'=>'<b>Note:</b> Ukuran gambar adalah 349 x 356px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
+	'hint'=>'<b>Note:</b> Ukuran gambar adalah 663 x 297px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
 	<?php if ($model->scenario == 'update'): ?>
 	<div class="control-group">
 		<label class="control-label">&nbsp;</label>
 		<div class="controls">
-			<img src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(349,356, '/images/category/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
+			<img src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(663,297, '/images/category/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
 		</div>
 	</div>
 	<?php endif; ?>
 	<br>
-	*/ ?>
+
 	<?php $this->widget('bootstrap.widgets.TbButton', array(
 		'buttonType'=>'submit',
 		'type'=>'primary',

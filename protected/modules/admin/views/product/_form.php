@@ -113,18 +113,26 @@ jQuery(document).ready(function($) {
 					<div class="span4">
 						<?php echo $form->textFieldRow($model,'kode',array('class'=>'input-block-level field', 'placeholder'=>'Your product code')); ?>
 					</div>
-					<?php /*
+					
 					<div class="span4">
-					<?php echo $form->labelEx($model, 'category_id'); ?>
+					<?php echo $form->labelEx($model, 'filter_collection'); ?>
 					<div class="controls">
-						<select id="PrdProduct_category_id" name="PrdProduct[category_id]" class="input-block-level">
-							<?php 
-							$dataCategory = (PrdCategory::model()->categoryTree('category', $this->languageID));
-							?>
+						<?php 
+						// $dataCategory_33 = (PrdCategory::model()->categoryTree('filtercat', $this->languageID));
+						$criteria = new CDbCriteria;
+						$criteria->with = array('description');
+						$criteria->addCondition('t.type = :type');
+						$criteria->params[':type'] = 'filtercat';
+						// $criteria->limit = 3;
+						$criteria->order = 'sort ASC';
+						$data_category3 = PrdCategory::model()->findAll($criteria);
+						?>
+						<select id="PrdProduct_filter_collection" name="PrdProduct[filter_collection]" class="input-block-level">
 							<option value="">---- Choose Category ----</option>
-							<?php echo PrdCategory::model()->createOption($dataCategory) ?>
-							<?php /*
-							*/ ?>
+							<?php foreach ($data_category3 as $key => $value): ?>
+								<option value="<?php echo $value->id ?>"><?php echo ucwords($value->description->name) ?></option>
+							<?php endforeach ?>
+							<?php // echo PrdCategory::model()->createOption($dataCategory_33, '', '') ?>
 							<?php /*
 							<option value="">---- Choose Category ----</option>
 							<?php foreach ($dataCategory as $key => $value): ?>
@@ -138,14 +146,14 @@ jQuery(document).ready(function($) {
 								<option value="<?php echo $value['id'] ?>"><?php echo $value['title'] ?></option>
 								<?php endif ?>
 							<?php endforeach ?>
-							* / ?>
+							*/ ?>
 						</select>
 					</div>
 					<script type="text/javascript">
 					$('#PrdProduct_category_id').val('<?php echo $model->category_id ?>');
 					</script>
 					</div>
-					*/ ?>
+					<!-- */ ?> -->
 					<div class="span4">
 									<?php /*
 						<?php 
@@ -289,7 +297,6 @@ jQuery(document).ready(function($) {
 					// echo $form->labelEx($value, '['.$lang->code.']desc');
 				    echo $form->textArea($value,'['.$lang->code.']desc',array('class'=>'redactor'));
 				    ?>
-				    
 				    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
 					</div>
 				    <?php
@@ -338,14 +345,14 @@ jQuery(document).ready(function($) {
 				<div class="divider10"></div>
 
 				<div class="row-fluid">
-					<div class="span3">
+					<div class="span4">
 						<?php echo $form->textFieldRow($model,'harga',array('class'=>'input-block-level')); ?>
 					</div>
-					<div class="span3">
-						<?php echo $form->textFieldRow($model,'data[finish]',array('class'=>'input-block-level')); ?>
+					<div class="span4">
+						<?php echo $form->textFieldRow($model,'data[size]',array('class'=>'input-block-level')); ?>
 					</div>
-					<div class="span3">
-						<?php echo $form->textFieldRow($model,'data[download]',array('class'=>'input-block-level')); ?>
+					<div class="span4">
+						<?php echo $form->textFieldRow($model,'data[material]',array('class'=>'input-block-level')); ?>
 					</div>
 					<?php /*
 					<div class="span3">
@@ -355,9 +362,17 @@ jQuery(document).ready(function($) {
 					*/ ?>
 				</div>
 				<div class="row-fluid">
-					<div class="span3">
-						<?php echo $form->textFieldRow($model,'data[material]',array('class'=>'input-block-level')); ?>
+					<div class="span4">
+						<?php echo $form->textFieldRow($model,'data[finish]',array('class'=>'input-block-level')); ?>
 					</div>
+					<div class="span4">
+						<?php echo $form->textFieldRow($model,'data[color]',array('class'=>'input-block-level')); ?>
+					</div>
+					<div class="span4">
+						<?php // echo $form->textFieldRow($model,'data[size]',array('class'=>'input-block-level')); ?>
+					</div>
+					
+					<?php /*
 					<div class="span6">
 						<?php echo $form->textFieldRow($model,'berat',array('class'=>'input-block-level',
 						'hint'=>'Note: Measurement in grams, for delivery estimation')); ?>
@@ -365,8 +380,8 @@ jQuery(document).ready(function($) {
 					</div>
 					
 					<div class="span3">
-
 					</div>
+					*/ ?>
 				</div>
 
 						<?php /*

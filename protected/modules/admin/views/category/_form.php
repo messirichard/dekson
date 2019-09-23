@@ -64,12 +64,12 @@
 	?>
 
 	<?php echo $form->fileFieldRow($model,'image',array(
-	'hint'=>'<b>Note:</b> Ukuran gambar adalah 1264 x 668px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
+	'hint'=>'<b>Note:</b> Ukuran gambar adalah 663 x 297px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
 	<?php if ($model->scenario == 'update'): ?>
 	<div class="control-group">
 		<label class="control-label">&nbsp;</label>
 		<div class="controls">
-			<img style="background-color: #999;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(1264,668, '/images/category/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
+			<img style="background-color: #999;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(663,297, '/images/category/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
 		</div>
 	</div>
 	<?php endif; ?>

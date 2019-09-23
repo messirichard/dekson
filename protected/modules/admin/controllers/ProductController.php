@@ -340,6 +340,7 @@ class ProductController extends ControllerAdmin
 
 					$model->tag = implode(', ', $dataTag).',';
 					$model->filter = implode('||', $dataTag).'||';
+					
 					$model->save(false);
 					Log::createLog("PrdProduct Controller Create $model->id");
 					Yii::app()->user->setFlash('success','Data has been inserted');

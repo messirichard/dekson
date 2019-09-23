@@ -1,82 +1,54 @@
-homepage
-about
-partner
-store
-how to order
+homepage.
 
----------------------------------------------------------
+home_banner1_pict
+home_banner1_title
+home_banner1_link
 
-how to order
+home_bannerc_picts_1
+home_bannerc_title_1
+home_bannerc_info_1
+home_bannerc_link_1
 
-how_hero_image
-how_hero_title
-how_hero_subtitle
 
-how_content_1
-how_content_bottom_2
-how_wa_contacts
-url_tokopedia
-url_bukalapak
+Brands
+id
+name
+image
 
--------------------
+--------------------
 
-store
-store_hero_image
-store_hero_title
-store_hero_subtitle
+statis page.
+- project_hero_image
+- project_hero_title
+- project_hero_desc
+----------------
+- brochure_hero_image
+- brochure_hero_title
+- brochure_hero_desc
 
--------------------
+----------------
+- showroom_picture
+- showroom_content
+- showroom_content2
+- showroom_content_btm
 
-partner
-partner_hero_image
-partner_hero_title
-partner_hero_subtitle
+----------------
+- contact_picture
+- contact_content
+- contact_address
 
-partner_content_1
+-----------
 
-partner2_image
-partner2_content
+gallery/project
+- id
+- nama
+- lokasi
+- type
+- image
 
-partner3_image
-partner3_content
+type gallery
+- id
+- nama
 
-partner4_subtitle
-partner4_content
+----------------------
 
--------------------
-
-about
-about_hero_image
-about_hero_title
-about_hero_subtitle
-
-about1_content
-
-about2_pictures_1
-about2_titles_1
-about2_content_1 * 2
-
-about3_background
-about3_title
-about3_content
-
-about4_subtitle
-about4_contents
-
--------------------
-
-homepage
-
-home_content_1
-home_subtitle_1
-
-home2_picture
-home2_subtitle
-home2_content
-
-home3_title
-home3_subtitle
-home3_icons_picture_1
-home3_icons_title_1 * 4
-
--------------------

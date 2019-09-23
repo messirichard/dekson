@@ -12,7 +12,7 @@
  */
 class PrdCategory extends CActiveRecord
 {
-	public $name;
+	public $name, $kode;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -277,8 +277,8 @@ class PrdCategory extends CActiveRecord
 		$this->_categoryData = null;
 	}
 	
-	public function categoryTree($type = 'category', $languageID = 1)
-	{
+	public function categoryTree($type = 'category', $languageID)
+	{		
 		$data = PrdCategory::model()->getData(array(
 			'limit'=>'',
 			'addCondition'=>array(
@@ -290,6 +290,7 @@ class PrdCategory extends CActiveRecord
 				)
 			),
 		), $languageID);
+
 		foreach ($data['data'] as $key => $value) {
 			$this->_categoryData[$value->parent_id][$value->id] = $value->attributes;
 			$this->_categoryData[$value->parent_id][$value->id]['name']=$value->name;
@@ -374,33 +375,34 @@ class PrdCategory extends CActiveRecord
 
 		return $dataCategory;
 	}
+
 	public function createOption($data, $str = '', $optiongroup = '', $arrayCategory = array())
 	{
 		// foreach ($data as $key => $value) {
-		// 	if (count($value['children']) > 0) {
-		// 		if ($optiongroup != '') {
-		// 		$optiongroup .= ' -> '.$value['title'];
-		// 		}else{
-		// 		$optiongroup .= $value['title'];
-		// 		}
-		// 		$str .= $this->createOption($value['children'], '', $optiongroup);
-		// 		$optiongroup = '';
-		// 		// if ($optiongroup != '') {
-		// 		// 	$str = '<optgroup label="'.$optiongroup.'">'.$str.'</optgroup>';
-		// 		// }
-		// 	}else{
-		// 		if ($key == 0 AND $optiongroup != '') {
-		// 			$str .= '<optgroup label="'.$optiongroup.'">';
-		// 		}
-		// 		$str .= '<option value="'.$value['id'].'">'.$value['title'].'</option>'."\n";
-		// 		if (count($data) == $key + 1 AND $optiongroup != '') {
-		// 			$str .= '</optgroup>';
-		// 		}
-		// 	}
-		// }
-		// if ($optiongroup != '') {
-		// 	$str = '<optgroup label="'.$optiongroup.'">'."\n".$str."\n".'</optgroup>'."\n";
-		// }
+			// 	if (count($value['children']) > 0) {
+			// 		if ($optiongroup != '') {
+			// 		$optiongroup .= ' -> '.$value['title'];
+			// 		}else{
+			// 		$optiongroup .= $value['title'];
+			// 		}
+			// 		$str .= $this->createOption($value['children'], '', $optiongroup);
+			// 		$optiongroup = '';
+			// 		// if ($optiongroup != '') {
+			// 		// 	$str = '<optgroup label="'.$optiongroup.'">'.$str.'</optgroup>';
+			// 		// }
+			// 	}else{
+			// 		if ($key == 0 AND $optiongroup != '') {
+			// 			$str .= '<optgroup label="'.$optiongroup.'">';
+			// 		}
+			// 		$str .= '<option value="'.$value['id'].'">'.$value['title'].'</option>'."\n";
+			// 		if (count($data) == $key + 1 AND $optiongroup != '') {
+			// 			$str .= '</optgroup>';
+			// 		}
+			// 	}
+			// }
+			// if ($optiongroup != '') {
+			// 	$str = '<optgroup label="'.$optiongroup.'">'."\n".$str."\n".'</optgroup>'."\n";
+			// }
 		foreach ($data as $key => $value) {
 			$str .= '<option '. ((in_array($value['id'], $arrayCategory)) ? 'selected="selected"' : '') .' value="'.$value['id'].'">'.(($optiongroup != '') ? $optiongroup.'' : '').$value['title'].'</option>'."\n";
 			if (count($value['children']) > 0) {
