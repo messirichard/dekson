@@ -56,8 +56,8 @@
             <ul>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/home')); ?>">Homepage</a></li>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/project')); ?>">Projects</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/brochure')); ?>">Brochure</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/brochure')); ?>">Showroom</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/brosur')); ?>">Brochure</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/showroom')); ?>">Showroom</a></li>
                 </li>
             </ul>
         </li>
