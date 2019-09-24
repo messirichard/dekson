@@ -128,9 +128,9 @@ jQuery(document).ready(function($) {
 						$data_category3 = PrdCategory::model()->findAll($criteria);
 						?>
 						<select id="PrdProduct_filter_collection" name="PrdProduct[filter_collection]" class="input-block-level">
-							<option value="">---- Choose Category ----</option>
+							<option value="">-- Choose Category --</option>
 							<?php foreach ($data_category3 as $key => $value): ?>
-								<option value="<?php echo $value->id ?>"><?php echo ucwords($value->description->name) ?></option>
+								<option <?php if ($value->id == $model->filter_collection): ?>selected="selected"<?php endif ?> value="<?php echo $value->id ?>"><?php echo ucwords($value->description->name) ?></option>
 							<?php endforeach ?>
 							<?php // echo PrdCategory::model()->createOption($dataCategory_33, '', '') ?>
 							<?php /*
