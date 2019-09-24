@@ -11,9 +11,9 @@
 <div class="row-fluid">
 	<div class="span8">
 	<?php if ($model->scenario == 'update'): ?>
-	<h1>Edit Promotion</h1>
+	<h1>Edit Data</h1>
 	<?php else: ?>
-	<h1>Add Promotion</h1>
+	<h1>Add Data</h1>
 	<?php endif ?>
 	<div class="widget">
 		<!-- <h4 class="widgettitle">Data Pages</h4> -->
@@ -108,22 +108,22 @@
 			    <?php
 			}
 			?>
-			<?php
-	    	$models = PrdProduct::model()->getAllDataDesc($this->languageID);
-		    $lists_gallery = CHtml::listData($models, 
-		                'id', 'name'); 
-	    	?>
-			<?php echo $form->dropDownListRow($model,'product_id', $lists_gallery, array('class'=>'input-block-level', 'empty'=>'-- Pilih Produk --')); ?>
 
-				<div class="row-fluid">
-					<div class="span6">
-			        	<?php echo $form->dropDownListRow($model, 'active', array(
-			        		'1'=>'Di Tampilkan',
-			        		'0'=>'Di Sembunyikan',
-			        	)); ?>
-						
-					</div>
+			<?php
+		    	$models = TipeGallery::model()->findAll();
+			    $lists_gallery = CHtml::listData($models, 'id', 'nama');
+	    	?>
+			<?php echo $form->dropDownListRow($model, 'topik_id', $lists_gallery, array('class'=>'input-block-level span5', 'empty'=>'-- Pilih Tipe --')); ?>
+
+			<div class="row-fluid">
+				<div class="span6">
+		        	<?php echo $form->dropDownListRow($model, 'active', array(
+		        		'1'=>'Di Tampilkan',
+		        		'0'=>'Di Sembunyikan',
+		        	)); ?>
+					
 				</div>
+			</div>
 			
 		</div>
 	<!-- span 12 -->

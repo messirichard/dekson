@@ -4,10 +4,10 @@ home_banner1_pict
 home_banner1_title
 home_banner1_link
 
-home_bannerc_picts_1
-home_bannerc_title_1
-home_bannerc_info_1
-home_bannerc_link_1
+home2_icons_picture_1
+home2_icons_title_1
+home2_icons_info_1
+home2_icons_link_1
 
 
 Brands
@@ -20,17 +20,17 @@ image
 statis page.
 - project_hero_image
 - project_hero_title
-- project_hero_desc
+- project_hero_subtitle
 ----------------
 - brochure_hero_image
 - brochure_hero_title
-- brochure_hero_desc
-
+- brochure_hero_subtitle
 ----------------
 - showroom_picture
 - showroom_content
-- showroom_content2
 - showroom_content_btm
+- showroom_email
+- showroom_wa
 
 ----------------
 - contact_picture
@@ -45,7 +45,7 @@ gallery/project
 - lokasi
 - type
 - image
-
+-------
 type gallery
 - id
 - nama

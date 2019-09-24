@@ -43,7 +43,7 @@
             <li><a href="#">Residence</a></li>
             <li><a href="#">Shopping Centre</a></li>
         </ul>
-        <div class="d-block d-none-block py-3 px-3 w-100">
+        <div class="d-block d-sm-none py-3 px-3 w-100">
             <select name="change_url_prd" id="" class="change_url_prd form-control">
             <option value="">BROWSE TYPE OF PROJECT</option>
             <option value="">All</option>

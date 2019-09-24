@@ -1,16 +1,16 @@
 <?php
 $this->breadcrumbs=array(
-	'Product Gallery',
+	'Projects',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-tag',
-	'title'=>'Product Gallery',
-	'subtitle'=>'Data Product Gallery',
+	'title'=>'Projects',
+	'subtitle'=>'Data Projects',
 );
 
 $this->menu=array(
-	array('label'=>'Add Product Gallery', 'icon'=>'plus-sign','url'=>array('create')),
+	array('label'=>'Add Projects', 'icon'=>'plus-sign','url'=>array('create')),
 );
 ?>
 
@@ -19,7 +19,7 @@ $this->menu=array(
 	<div class="span12">
 		<div class="widgetbox block-rightcontent">                        
 		    <div class="headtitle">
-		        <h4 class="widgettitle">Data Product Gallery</h4>
+		        <h4 class="widgettitle">Data Projects</h4>
 		    </div>
 		    <div class="widgetcontent">
 				<ul class="thumbnails">
@@ -30,7 +30,7 @@ $this->menu=array(
 				<?php foreach ($data as $key => $value): ?>
 					<li class="span2">
 						<div class="thumbnail">
-							<img src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(200,150, '/images/gallery/'.$value->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="">
+							<img src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(175,135, '/images/gallery/'.$value->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="">
 							<h3><?php echo $value->title ?></h3>
 							<a href="<?php echo CHtml::normalizeUrl(array('update', 'id'=>$value->id)); ?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
 							<a href="<?php echo CHtml::normalizeUrl(array('delete', 'id'=>$value->id)); ?>" class="btn btn-primary delete-product"><i class="fa fa-trash-o"></i></a>

@@ -25,7 +25,7 @@
                     </div>
                     <div class="contact">
                         <h5>Email.</h5>
-                        <p>marketing@dekkson.com or </p>
+                        <a href="mailto:marketing@dekkson.com"><p>marketing@dekkson.com or</p></a>
                         <h5>Whatsapp </h5>
                         <a href="#"><p>081 6550 2626 (Click to chat)</p></a>
                     </div>

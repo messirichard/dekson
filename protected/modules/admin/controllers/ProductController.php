@@ -187,10 +187,10 @@ class ProductController extends ControllerAdmin
 			$image = CUploadedFile::getInstance($model,'image');
 			$model->image = substr(md5(time()),0,5).'-'.$image->name;
 
-			$image2 = CUploadedFile::getInstance($model,'image2');
-			if ($image2->name != '') {
-				$model->image2 = substr(md5(time()),0,5).'-'.$image2->name;
-			}
+			// $image2 = CUploadedFile::getInstance($model,'image2');
+			// if ($image2->name != '') {
+			// 	$model->image2 = substr(md5(time()),0,5).'-'.$image2->name;
+			// }
 
 			$model->data = $_POST['PrdProduct']['data'];
 
@@ -204,9 +204,9 @@ class ProductController extends ControllerAdmin
 				{
 					$image->saveAs(Yii::getPathOfAlias('webroot').'/images/product/'.$model->image);
 
-					if ($image2->name != '') {
-						$image2->saveAs(Yii::getPathOfAlias('webroot').'/images/product/'.$model->image2);
-					}
+					// if ($image2->name != '') {
+					// 	$image2->saveAs(Yii::getPathOfAlias('webroot').'/images/product/'.$model->image2);
+					// }
 
 					$model->date_input = date("Y-m-d H:i:s");
 					$model->date_update = date("Y-m-d H:i:s");
@@ -467,10 +467,10 @@ class ProductController extends ControllerAdmin
 				$model->image = substr(md5(time()),0,5).'-'.$image->name;
 			}
 
-			$image2 = CUploadedFile::getInstance($model,'image2');
-			if ($image2->name != '') {
-				$model->image2 = substr(md5(time()),0,5).'-'.$image2->name;
-			}
+			// $image2 = CUploadedFile::getInstance($model,'image2');
+			// if ($image2->name != '') {
+			// 	$model->image2 = substr(md5(time()),0,5).'-'.$image2->name;
+			// }
 
 			unset($modelAttributes);
 			if (count($_POST['PrdProductAttributes']['attribute']) > 0) {
@@ -503,9 +503,9 @@ class ProductController extends ControllerAdmin
 					if ($image->name != '') {
 						$image->saveAs(Yii::getPathOfAlias('webroot').'/images/product/'.$model->image);
 					}
-					if ($image2->name != '') {
-						$image2->saveAs(Yii::getPathOfAlias('webroot').'/images/product/'.$model->image2);
-					}
+					// if ($image2->name != '') {
+					// 	$image2->saveAs(Yii::getPathOfAlias('webroot').'/images/product/'.$model->image2);
+					// }
 
 					if ($_GET['type']=='copy') {
 						$model->date_input = date("Y-m-d H:i:s");
