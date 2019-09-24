@@ -13,26 +13,29 @@
   <div class="prelative container">
     <div class="row no-gutters">
       <div class="col-md-20">
-        <div class="images"><img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>Layer-25.png" alt=""></div>
+        <div class="images"><img class="img img-fluid w-100" src="<?php echo Yii::app()->baseUrl.'/images/static/'. $this->setting['contact_picture'] ?>" alt=""></div>
       </div>
       <div class="col-md-40">
         <div class="box-content">
           <div class="caption">
-            <p>For any Dekkson product related questions or comments please contact Dekkson customer support Whatsapp or email. You can also fill in the information at our online inquiry form below and we’ll get back to you soon.</p>
+            <p><?php echo $this->setting['contact_content'] ?></p>
           </div>
           <div class="headquarter">
             <h5>Headquarter</h5>
-            <p>JL. Daan Mogot, Km. 12, 8 - Jakarta Barat, DKI Jakarta 11620</p>
+            <p><?php echo $this->setting['contact_address'] ?></p>
           </div>
           <div class="contact">
             <h5>Email.</h5>
-            <p>marketing@dekkson.com or </p>
+            <p><?php echo $this->setting['email'] ?> or </p>
             <h5>Whatsapp </h5>
-            <a href="#"><p>081 6550 2626 (Click to chat)</p></a>
+            <?php
+            $nums_wa = str_replace('08', '628',  str_replace(' ', '', $this->setting['contact_wa']) );
+            ?>
+            <a href="https://wa.me/<?php echo $nums_wa ?>"><p><?php echo $this->setting['contact_wa'] ?> (Click to chat)</p></a>
           </div>
           <div class="telephone">
             <h5>Telephone. </h5>
-            <p>(+62 21) 6190255</p>
+            <p><?php echo $this->setting['contact_phone'] ?></p>
           </div>
 
           <div class="hr-garis"></div>
