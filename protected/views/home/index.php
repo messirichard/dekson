@@ -18,7 +18,7 @@
                 <div class="box-content">
                     <div class="image">
                         <img class="gambar img img-fluid" src="<?php echo Yii::app()->baseUrl.'/images/category/'. $value->image ?>" alt="">
-                        <div class="judul"> <p><?php echo $value->description->name ?></p> </div>
+                        <div class="judul"> <p><?php echo nl2br($value->description->name); ?></p> </div>
 
                         <div class="subjudul">
                             <p><?php echo $value->description->desc; ?></p>

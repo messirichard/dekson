@@ -33,21 +33,30 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
         </div>
         <div class="col-md-46">
           <div class="d-inline-block align-middle nbloc_steg">
-            <span>PRODUCT<br>CATEGORY</span>
+            <span><a href="<?php echo CHtml::normalizeUrl(array('/product/landing')); ?>">PRODUCT<br>CATEGORY</a></span>
           </div>
           <div class="d-inline-block align-middle lines_bc_agrt">
             <img src="<?php echo $this->assetBaseurl2; ?>backs_lin_separators.jpg" alt="" class="img img-fluid">
           </div>
           <div class="menu_rightsl d-inline-block align-middle">
+            <?php 
+            // lim 8
+            $criteria = new CDbCriteria;
+            $criteria->with = array('description');
+            $criteria->addCondition('t.parent_id = :parent_id');
+            $criteria->params[':parent_id'] = 0;
+            $criteria->addCondition('t.type = :type');
+            $criteria->params[':type'] = 'category';
+            $criteria->limit = 8;
+            $criteria->order = 'sort ASC';
+            $findCategorys_alln = PrdCategory::model()->findAll($criteria);
+            ?>
             <ul class="list-inline">
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Door & Window</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Slide & Fold Door</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Glass</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Aluminum</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Steel Door</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Furniture</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Electronic Lock</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Others</a></li>
+              <?php foreach ($findCategorys_alln as $key => $value): ?>
+              <li class="list-inline-item">
+                <a href="<?php echo CHtml::normalizeUrl(array('/product/index', 'category'=> $value->id)); ?>"><?php echo ucwords($value->description->name) ?></a>
+              </li>
+              <?php endforeach ?>
             </ul>
           </div>
         </div>
@@ -73,14 +82,20 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               PRODUCTS
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Door & Window</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Slide & Fold Door</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Glass</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Aluminum</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Steel Door</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Furniture</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Electronic Lock</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Others</a>
+              <?php 
+              // lim 8
+              $criteria = new CDbCriteria;
+              $criteria->with = array('description');
+              $criteria->addCondition('t.parent_id = :parent_id');
+              $criteria->params[':parent_id'] = 0;
+              $criteria->addCondition('t.type = :type');
+              $criteria->params[':type'] = 'category';
+              $criteria->order = 'sort ASC';
+              $findCategorys_alln = PrdCategory::model()->findAll($criteria);
+              ?>
+              <?php foreach ($findCategorys_alln as $key => $value): ?>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/product/index', 'category'=> $value->id)); ?>"><?php echo ucwords($value->description->name) ?></a>
+              <?php endforeach ?>
             </div>
           </li>
 
@@ -111,7 +126,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
           <div class="menu-taffix">
             <ul class="list-inline d-inline">
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">HOME</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">PRODUCTS</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/product/landing')); ?>">PRODUCTS</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/brochures')); ?>">BROCHURE</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>

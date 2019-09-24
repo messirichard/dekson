@@ -37,7 +37,7 @@
 
 		<?php
 		echo $form->labelEx($value, '['.$lang->code.']name');
-	    echo $form->textField($value,'['.$lang->code.']name',array('class'=>'span8', 'maxlength'=>100));
+	    echo $form->textArea($value,'['.$lang->code.']name',array('class'=>'span8'));
 	    ?>
 	    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$lang->code.'.png' ?>"></span>
 	    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
