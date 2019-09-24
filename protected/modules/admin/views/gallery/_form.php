@@ -95,15 +95,15 @@
 			    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$lang->code.'.png' ?>"></span>
 			    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
 				</div>						
-				<?php /*
+				
 				<div class="pj-multilang-wrap myLanguage control-group" style="display: <?php if ($key==$this->setting['lang_deff']): ?>block<?php else: ?>none<?php endif ?>;" data-id="<?php echo $lang->id ?>">
 				<?php
-				echo $form->labelEx($value, '['.$lang->code.']content');
-			    echo $form->textArea($value,'['.$lang->code.']content',array('class'=>'span5 redactor', 'maxlength'=>200));
+				echo $form->labelEx($value, '['.$lang->code.']sub_title');
+			    echo $form->textArea($value,'['.$lang->code.']sub_title',array('class'=>'span5', 'maxlength'=>200));
 			    ?>
 			    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$lang->code.'.png' ?>"></span>
 			    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
-				</div>*/ ?>
+				</div>
 
 			    <?php
 			}

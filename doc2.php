@@ -48,3 +48,5 @@ statis no language
 <?php echo $this->setting['asdfasdf'] ?>
 
 <?php echo $this->assetBaseurl2 ?>
+
+<?php echo Yii::app()->baseUrl.'/images/static/'. $this->setting['asdf'] ?>

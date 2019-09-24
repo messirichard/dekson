@@ -125,11 +125,11 @@ $this->pageHeader=array(
 						<?php endif ?>
 
 						<?php $type = 'home2_icons_title_'. $i; ?>
-						<?php Common::createSetting($type, 'Title', 'text', 'y') ?>
+						<?php Common::createSetting($type, 'Info Title', 'text', 'y') ?>
 						<?php foreach (Language::model()->getLanguage() as $key => $value): ?>
 						<div class="pj-multilang-wrap myLanguage control-group" style="display: <?php if ($value->code==$this->setting['lang_deff']): ?>block<?php else: ?>none<?php endif ?>;" data-id="<?php echo $value->id ?>">
 						<label class="control-label required" for="Setting_<?php echo $type ?>_<?php echo $value->code ?>"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
-						<input value="<?php echo $model[$type]['desc'][$value->code]->value ?>" type="text" id="Setting_<?php echo $type ?>_<?php echo $value->code ?>" name="Setting[<?php echo $type ?>][<?php echo $value->code ?>]" class="span10">
+						<textarea id="Setting_<?php echo $type ?>_<?php echo $value->code ?>" name="Setting[<?php echo $type ?>][<?php echo $value->code ?>]" class="span10" rows="2"><?php echo $model[$type]['desc'][$value->code]->value ?></textarea>
 
 						<span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$value->code.'.png' ?>"></span>
 						<span class="help-inline _em_" style="display: none;">Please correct the error</span>

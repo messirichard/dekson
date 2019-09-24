@@ -45,7 +45,7 @@ gallery/project
 - lokasi
 - type
 - image
--------
+-----------
 type gallery
 - id
 - nama
