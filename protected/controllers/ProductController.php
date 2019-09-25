@@ -14,9 +14,22 @@ class ProductController extends Controller
 		$criteria2->addCondition('description.language_id = :language_id');
 		$criteria2->params[':language_id'] = $this->languageID;
 		
-		if (isset($_GET['q']) && $_GET['q'] != '') {
-			$criteria2->addCondition('t.filter LIKE :q OR description.name LIKE :q OR description.desc LIKE :q');
-			$criteria2->params[':q'] = '%'.$_GET['q'].'%';
+		if (isset($_GET['q']) && $_GET['q'] != '' ) {
+			$criteria2->addCondition('t.kode = :q');
+			$criteria2->params[':q'] = $_GET['q'];
+
+			if (isset($_GET['type'])){
+				$criteria2->addCondition('t.filter LIKE :cat');
+				$criteria2->params[':cat'] = '%'.$_GET['type'].'%';
+			}
+			if (isset($_GET['material']) and $_GET['material'] != '') {
+				$criteria2->addCondition('t.material LIKE :mater');
+				$criteria2->params[':mater'] = '%'.$_GET['material'].'%';
+			}
+			if (isset($_GET['finishing']) and $_GET['finishing'] != '') {
+				$criteria2->addCondition('t.finishing LIKE :finish');
+				$criteria2->params[':finish'] = '%'.$_GET['finishing'].'%';
+			}
 		}
 
 		if (isset($_GET['filtercat'])) {
@@ -102,7 +115,7 @@ class ProductController extends Controller
 		$criteria3->select = "t.id, t.brand_id";
 		$criteria3->group = 't.id';
 		$listProductId = PrdProduct::model()->findAll($criteria3);
-		
+
 		$idBrand = array();
 		foreach ($listProductId as $key => $value) {
 			array_push($idBrand, $value->brand_id);

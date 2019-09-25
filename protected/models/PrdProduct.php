@@ -57,7 +57,7 @@ class PrdProduct extends CActiveRecord
 			array('harga, harga_coret', 'numerical'),
 			array('image', 'length', 'max'=>200),
 			array('kode', 'length', 'max'=>50),
-			array('tag, data[size], data[finish], data[color], data[material], filter, harga_coret, image2, gallery_id, urutan, filter_collection', 'safe'),
+			array('tag, data[size], data[finish], data[color], data[material], filter, harga_coret, image2, gallery_id, urutan, filter_collection, material, finishing', 'safe'),
 
 			array('image', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>FALSE, 'on'=>'insert', 'except'=>array('createTemp', 'copy')),
 			array('image', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>TRUE, 'on'=>'update', 'except'=>array('createTemp', 'copy')),

@@ -98,7 +98,7 @@
                 <p>Material</p>
               </div>
               <div class="isi">
-                <p><?php echo $datas['material'] ?></p>
+                <p><?php echo $data->material ?></p>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@
                 <p>Finishing</p>
               </div>
               <div class="isi">
-                <p><?php echo $datas['finish'] ?></p>
+                <p><?php echo $data->finishing ?></p>
               </div>
             </div>
             <div class="col-md-20">

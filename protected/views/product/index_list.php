@@ -31,56 +31,7 @@ $str_category = $strCategory->description->name;
     </div>
 </section>
 
-<!-- KURANG FORM -->
-
-<div class="prelatife container">
-    <section class="block-top-filterblue p-5">
-        <h3 class="text-center">Find Dekkson Products</h3>
-        <div class="py-1"></div>
-        <form method="post" action="#" onsubmit="alert('underconstruction'); return false;">
-            <div class="row no-gutters justify-content-center">
-                <div class="col">
-                      <div class="form-group">
-                        <label for="exampleIn1">Accessories type</label>
-                        <select name="" id="" class="form-control">
-                            <option value="">All</option>
-                        </select>
-                      </div>
-                </div>
-                <div class="col">
-                      <div class="form-group">
-                        <label for="exampleIn1">Material</label>
-                        <select name="" id="" class="form-control">
-                            <option value="">All</option>
-                        </select>
-                      </div>
-                </div>
-                <div class="col">
-                      <div class="form-group">
-                        <label for="exampleIn1">Finishing</label>
-                        <select name="" id="" class="form-control">
-                            <option value="">All</option>
-                        </select>
-                      </div>
-                </div>
-                <div class="col">
-                      <div class="form-group">
-                        <label for="exampleIn1">Keyword / Item Code</label>
-                        <input type="text" class="form-control">
-                      </div>
-                </div>
-                <div class="col col-2">
-                    <div class="form-group lasts">
-                        <label for="exampleIn1" class="n_hide">&nbsp;</label>
-                        <button type="submit" class="btn btn-info d-block"><i class="fa fa-search"></i></button>
-                      </div>
-                </div>
-            </div>
-          </form>
-        <div class="clear"></div>
-    </section>
-    <div class="py-3 my-2"></div>
-</div>
+<?php echo $this->renderPartial('//layouts/_top_filters_product', array()); ?>
 
 <section class="products-list-sec-1">
     <div class="prelative container">
@@ -93,11 +44,23 @@ $str_category = $strCategory->description->name;
         </div>
         <div class="col-md-30">
           <div class="glass-kanan text-right">
-            <ul>
-              <li><a href="#">Material (All)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
-              <li><a href="#">Finishing (All)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
-              <li><a href="#">Keyword / Item Code (None)</a></li>
-            </ul>
+            <?php if (isset($_GET['q'])): ?>
+              <ul>
+                <?php if (isset($_GET['material']) && $_GET['material'] != ''): ?>
+                <li><a href="#">Material (<?php echo $_GET['material'] ?>)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                <?php endif ?>
+                <?php if (isset($_GET['finishing']) && $_GET['finishing'] != ''): ?>
+                <li><a href="#">Finishing (<?php echo $_GET['finishing'] ?>)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                <?php endif ?>
+                <li><a href="#">Keyword / Item Code (<?php echo $_GET['q'] ?>)</a></li>
+              </ul>
+            <?php else: ?>
+              <ul>
+                <li><a href="#">Material (All)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">Finishing (All)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">Keyword / Item Code (None)</a></li>
+              </ul>
+            <?php endif ?>
           </div>
         </div>
       </div>

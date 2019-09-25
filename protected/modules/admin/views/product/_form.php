@@ -352,7 +352,7 @@ jQuery(document).ready(function($) {
 						<?php echo $form->textFieldRow($model,'data[size]',array('class'=>'input-block-level')); ?>
 					</div>
 					<div class="span4">
-						<?php echo $form->textFieldRow($model,'data[material]',array('class'=>'input-block-level')); ?>
+						<?php echo $form->textFieldRow($model,'material',array('class'=>'input-block-level')); ?>
 					</div>
 					<?php /*
 					<div class="span3">
@@ -363,7 +363,7 @@ jQuery(document).ready(function($) {
 				</div>
 				<div class="row-fluid">
 					<div class="span4">
-						<?php echo $form->textFieldRow($model,'data[finish]',array('class'=>'input-block-level')); ?>
+						<?php echo $form->textFieldRow($model,'finishing',array('class'=>'input-block-level')); ?>
 					</div>
 					<div class="span4">
 						<?php echo $form->textFieldRow($model,'data[color]',array('class'=>'input-block-level')); ?>

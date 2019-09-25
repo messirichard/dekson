@@ -3363,6 +3363,13 @@ DROP TABLE IF EXISTS `view_slide`;
 CREATE VIEW `view_slide`  AS  select `sl_slide`.`id` AS `id`,`sl_slide`.`topik_id` AS `topik_id`,`sl_slide`.`image` AS `image`,`sl_slide`.`active` AS `active`,`sl_slide`.`date_input` AS `date_input`,`sl_slide`.`date_update` AS `date_update`,`sl_slide`.`insert_by` AS `insert_by`,`sl_slide`.`last_update_by` AS `last_update_by`,`sl_slide`.`writer` AS `writer`,`sl_slide_description`.`id` AS `id2`,`sl_slide_description`.`slide_id` AS `slide_id`,`sl_slide_description`.`language_id` AS `language_id`,`sl_slide_description`.`title` AS `title`,`sl_slide_description`.`content` AS `content`,`sl_slide_description`.`url` AS `url`,`sl_slide`.`sort` AS `sort` from (`sl_slide` join `sl_slide_description` on((`sl_slide_description`.`slide_id` = `sl_slide`.`id`))) ;
 
 --
+-- Struktur untuk view `view_products`
+--
+DROP TABLE IF EXISTS `view_products`;
+
+CREATE VIEW `view_products`  AS  select `prd_product`.`id` AS `id`, `prd_product`.`material` AS `material`, `prd_product`.`finishing` AS `finishing` from `prd_product` order by `prd_product`.`id` DESC;
+
+--
 -- Indexes for dumped tables
 --
 
