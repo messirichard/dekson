@@ -19,8 +19,8 @@
         <div class="carousel-inner">
           <?php foreach ($slide as $key => $value): ?>
           <div class="carousel-item <?php if($key == 0): ?>active<?php endif ?> home-slider-new">
-              <img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl2; ?>slide-1.jpg" alt="">
-              <img class="w-100 d-block d-sm-none" src="<?php echo $this->assetBaseurl2; ?>slide-1-mob.jpg" alt="">
+              <!--<img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl2; ?>slide-1.jpg" alt="">-->
+              <!--<img class="w-100 d-block d-sm-none" src="<?php echo $this->assetBaseurl2; ?>slide-1-mob.jpg" alt="">-->
               <img class="w-100 d-none d-sm-block" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(1920,776, '/images/slide/'. $value->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="">
                     <img class="w-100 d-block d-sm-none" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(774,867, '/images/slide/'. $value->image2 , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="">
               <div class="carousel-caption caption-slider-home mx-auto">
