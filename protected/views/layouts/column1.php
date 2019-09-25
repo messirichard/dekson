@@ -15,7 +15,7 @@
 ?>
 <div class="fcs-wrapper outers_fcs_wrapper prelatife wrapper-slide">
 
-    <div id="myCarousel_home" class="carousel carousel-fade" data-ride="carousel" data-interval="4500">
+    <div id="myCarousel_home" class="carousel carousel-fade" data-ride="carousel" data-interval="45000000000">
         <div class="carousel-inner">
           <?php foreach ($slide as $key => $value): ?>
           <div class="carousel-item <?php if($key == 0): ?>active<?php endif ?> home-slider-new">

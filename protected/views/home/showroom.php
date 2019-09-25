@@ -41,7 +41,7 @@
     </div>
 </section>
 
-<section class="showroom-sec-2">
+<section class="showroom-sec-2 inners_page">
     <div class="prelative container">
         <div class="row no-gutters">
            

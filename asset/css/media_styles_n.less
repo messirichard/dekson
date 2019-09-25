@@ -3,6 +3,25 @@
 @monts : 'Montserrat', sans-serif;
 
 /*----------------- Responsive ---------------------*/
+@media (max-width: 1285px){
+	
+	section.contact-sec-1 .prelative.container .box-content,
+	section.showroom-sec-1 .prelative.container .box-content{
+		min-height: 100%;
+	}
+	header.head .bottom_section .menu_rightsl ul li, header.head .bottom_section .menu_rightsl ul li a{
+		font-size: 14px;
+	}
+	section.showroom-sec-1 .prelative.container .box-content .caption p,
+	section.contact-sec-1 .prelative.container .box-content .caption p{
+		font-size: 17px;
+	}
+	section.contact-sec-1 .prelative.container .box-content .hr-garis{
+		margin: 10px 0;
+	}
+
+}
+
 @media (max-width: 1200px){
 	
 }
@@ -148,7 +167,7 @@
 		font-size: 0.9rem;
 	}
 	.fcs-wrapper.outers_fcs_wrapper #myCarousel_home.carousel .carousel-caption{
-		padding-bottom: 3rem;
+		padding-bottom: 2rem;
 	}
 	.fcs-wrapper.outers_fcs_wrapper #myCarousel_home.carousel .carousel-indicators{
 		bottom: 0px;
@@ -219,6 +238,42 @@
 
 	body{
 		padding-top: 75px;
+	}
+	section.products-list-sec-1 .glass-kanan ul{
+		margin-right: 0;
+		padding-left: 0;
+		display: block;
+		text-align: center;
+	}
+	section.products-list-sec-1 .glass-kanan ul li a{
+		font-size: 10px;
+	}
+
+	section.brochures-sec-2 .prelative.container .content-box,
+	section.project-sec-2 .prelative.container .content-box {
+	    padding: 0.8rem 15px 1.5rem;
+	}
+	section.project-sec-1,
+	section.brochures-sec-2{
+		margin-top: 0;
+		margin-bottom: 0 !important;
+		padding-bottom: 1.5rem;
+		background-color: #e6eaee;
+	}
+
+	.fcs-wrapper.outers_fcs_wrapper #myCarousel_home.carousel .carousel-indicators{
+		bottom: inherit;
+		right: 10px;
+		top: 15px;
+		margin: 0px;
+		width: auto;
+		left: inherit;
+		display: block;
+	}
+	.fcs-wrapper.outers_fcs_wrapper #myCarousel_home.carousel .carousel-indicators li{
+		display: block;
+		flex: inherit;
+		margin-bottom: 0.4rem;
 	}
 
 }
