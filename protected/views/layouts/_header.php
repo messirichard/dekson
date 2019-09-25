@@ -16,7 +16,10 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
         <div class="col-md-40">
           <div class="rights_txt_info text-right">
             <ul class="list-inline">
-              <li class="list-inline-item">WHATSAPP <i class="fa fa-whatsapp"></i> 081 2235 57575</li>
+              <?php
+              $nums_wa = str_replace('08', '628',  str_replace(' ', '', $this->setting['contact_wa']) );
+              ?>
+              <li class="list-inline-item">WHATSAPP <i class="fa fa-whatsapp"></i> <a href="https://wa.me/<?php echo $nums_wa ?>"><?php echo $this->setting['contact_wa'] ?></a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/brochures')); ?>">BROCHURE</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>
