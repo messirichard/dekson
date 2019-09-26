@@ -43,7 +43,7 @@
                     <div class="box-description-mid">
                         <p><?php echo $this->setting['home_banner1_title'] ?></p>
                         <div class="click-about-us">
-                            <a href="<?php echo $this->setting['home_banner1_link'] ?>">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=YCRgpZAWL20">
                             <img src="<?php echo $this->assetBaseurl; ?>click0.png" alt="">
                             </a>
                             <a data-fancybox href="https://www.youtube.com/watch?v=YCRgpZAWL20">See our video</a>
