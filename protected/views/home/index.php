@@ -46,11 +46,14 @@
                             <a href="<?php echo $this->setting['home_banner1_link'] ?>">
                             <img src="<?php echo $this->assetBaseurl; ?>click0.png" alt="">
                             </a>
-                            <a href="<?php echo $this->setting['home_banner1_link'] ?>">Learn more about us</a>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=YCRgpZAWL20">See our video</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+            <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
             <?php for ($i=1; $i < 4; $i++) { ?>
             <div class="col-md-20">
